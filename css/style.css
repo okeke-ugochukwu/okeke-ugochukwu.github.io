@@ -540,6 +540,11 @@ footer a {
 }
 
 
+/* darkmode switch */
+
+
+
+
 @media only screen and (max-width: 1089px) {
     #toon {
         width: 450px;
@@ -741,6 +746,9 @@ footer a {
 @media only screen and (min-width: 890px) {
     p {
         font-size: 1.2rem;
+    }
+    .switch {
+        display: block
     }
 }
 @media only screen and (min-width: 1090px)   {
