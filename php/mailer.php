@@ -15,7 +15,7 @@
     $message = $_POST["Message"];
 
     if(@mail($adminEmail, $subject, $message, $headers)) {
-        header (Location: "https://okeke-ugochukwu.github.io/confirmation_message");
+        header (Location: "https://okeke-ugochukwu.github.io/confirmation_message.html");
     }
     else {
         echo "Something went wrong :(";
