@@ -1,4 +1,4 @@
-$(window).on("load", function() {
+$("#toon").on("load", function() {
     $(".intro").fadeOut("fast");
     $(".page").css("opacity", "1");
     $("body").css("overflowY", "scroll");
