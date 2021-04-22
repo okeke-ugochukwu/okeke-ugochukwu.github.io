@@ -550,8 +550,15 @@ footer a {
     filter: drop-shadow(2px 2px 5px black);
     -webkit-filter: drop-shadow(2px 2px 5px black);
 }
-
-/* darkmode switch */
+.rc-anchor-light {
+    background: none;
+}
+.rc-anchor-light.rc-anchor-normal {
+    border: 1px solid #15022e;
+}
+#recaptcha-anchor-label {
+    color: #F4F6FC;
+}
 
 
 
