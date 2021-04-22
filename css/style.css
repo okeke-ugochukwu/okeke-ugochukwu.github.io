@@ -539,7 +539,15 @@ footer a {
     }
 }
 
-
+.color-modes {
+    width: 50px;
+    position: absolute;
+    right: 100px;
+    top: 40px;
+}
+#light-mode-icon {
+    display: none;
+}
 /* darkmode switch */
 
 

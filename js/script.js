@@ -69,3 +69,15 @@ var inputNodeList = document.getElementsByClassName("input-field");
            this.parentElement.style.transform = "none";
         }
     }
+
+function switchDarkMode() {
+    document.getElementById("dark-mode-css").setAttribute("href", "css/style_darkmode.css");
+    document.getElementById("dark-mode-icon").style.display = "none";
+    document.getElementById("light-mode-icon").style.display = "block";
+}
+
+function switchLightMode() {
+    document.getElementById("dark-mode-css").removeAttribute("href");
+    document.getElementById("dark-mode-icon").style.display = "block";
+    document.getElementById("light-mode-icon").style.display = "none";
+}
