@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 body {   
-    background: #200346;
+    background: hsl(266, 92%, 14%);
     color: rgb(219, 219, 219);
     overflow-x: hidden;
     overflow-y: hidden;
@@ -279,8 +279,8 @@ section .hey {
 }
 #source {
     background: transparent;
-    color: #6832e3;
-    border: 2px solid #6832e3
+    color: #FF5C1C;
+    border: 2px solid #FF5C1C
 }
 #source:hover {
     color: white;
