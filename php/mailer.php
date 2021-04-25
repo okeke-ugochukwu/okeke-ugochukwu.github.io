@@ -14,7 +14,9 @@
 
     $message = $_POST["Message"];
 
-    if(@mail($adminEmail, $subject, $message, $headers)) {
+    $mailFunction = mail($adminEmail, $subject, $message, $headers);
+
+    if($mailFunction) {
         header (Location: "https://okeke-ugochukwu.github.io/confirmation_message.html");
     }
     else {
