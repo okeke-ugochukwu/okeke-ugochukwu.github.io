@@ -704,7 +704,7 @@ footer a {
         margin-bottom: 100px;    
     }
     #page-icon {
-        display: initial;
+        display: none;
         width: 80px;
         float: right;
         margin: 10px 10px 0px 0px;
@@ -745,6 +745,12 @@ footer a {
         font-size: 1.4rem;
     }
 
+}
+@media only screen and (max-width: 635px) {
+    .color-modes {
+        right: 30px;
+        width: 35px;
+    }
 }
 @media only screen and (max-width: 1268px) {
     #toon {
