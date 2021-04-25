@@ -18,7 +18,6 @@ body {
     color: rgb(102, 49, 227);
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: .9s;
 }
 p {
     font-size: 1.2rem;
@@ -304,6 +303,7 @@ section .hey {
     font-size: 20px;
     border-radius: 100px;
 }
+
 .more-projects a:hover {
  /**refer to .download-btn hover, line 200**/
 }

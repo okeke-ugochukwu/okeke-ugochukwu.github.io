@@ -18,7 +18,6 @@ body {
     color: rgb(219, 219, 219);
     overflow-x: hidden;
     overflow-y: hidden;
-    transition: .9s;
 }
 p {
     font-size: 1.2rem;
