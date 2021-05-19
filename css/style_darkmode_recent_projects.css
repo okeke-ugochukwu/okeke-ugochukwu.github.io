@@ -1,0 +1,270 @@
+/*defaults from main stylesheet*/
+*:focus {
+    outline: none;
+}
+* {
+    transition: .3s;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    cursor: url(https://raw.githubusercontent.com/okeke-ugochukwu/okeke-ugochukwu.github.io/main/img/cursor.png), default;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/*firefox fix*/
+body {
+    scrollbar-width: 9px;              
+    scrollbar-color: #490FCF;
+}
+/*chrome etc fix*/
+body::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    background: #490FCF;
+    border-radius: 10px;
+    height: 10px;
+}
+body {
+    background: #1f0345;
+    color: rgb(219, 219, 219);
+    overflow-x: hidden;
+}
+p {
+    font-size: 1.4rem;
+}
+
+
+.scroll-top-container {
+    transform: scale(0);
+    position: fixed;
+    z-index: 1;
+    bottom: 50px;
+    right: 50px;
+}
+.scroll-top-container button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+.scroll-top-container i {
+    padding: 17px;
+    color: white;
+    display: block;
+    font-size: 20px;
+    border-radius: 100px;
+    background: linear-gradient(130deg, #2d23f7 ,rgb(131, 67, 250));
+}
+.scroll-top-container i:hover {
+    background: linear-gradient( 130deg, #ee1d16, #ff6a00);
+    box-shadow: 0px 10px 10px #ff6a0077;
+    transform: scale(1.2);
+}
+
+
+
+.container {
+    width: 100%;
+}
+header {
+    width: 100%;
+    display: flex;
+    background: #1f0345;
+    color: white;
+    position: relative;
+    transition: .7s;
+}
+header img {
+    width: 90px;
+    padding: 10px;
+}
+header div:first-child {
+    margin-left: 50px;
+}
+header div:nth-child(2) {
+    position: absolute;
+    right: 0;
+}
+h1 {
+    font-size: 40px;
+}
+
+
+.flex-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flex-item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+}
+.left {
+    width: 30%;
+}
+.right  {
+    width: 60%;
+}
+.thumbnail {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background: #490FCF;
+}
+h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 2ch;
+}
+.container p {
+    font-size: 1.2rem;
+    line-height: 2ch;
+    margin-bottom: 10px;
+    width: 60%;
+}
+a {
+    text-decoration: none;
+    color: #ff6a00;
+}
+.project-btns {
+    display: flex;
+}
+.project-btns button {
+    padding: 0px;
+    background: none;
+    border: none;
+}
+.project-btns button:first-child {
+    margin-right: 15px;
+}
+
+
+
+.project-btns a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    background: linear-gradient(to right, #2d23f7 ,#6a38d8);
+}
+.project-btns a:hover {
+    background: linear-gradient(to right,  #ee1d16, #ff6a00);
+    box-shadow: 0px 10px 20px #ff6a005d;
+    transform: scale(1.1);
+}
+#source {
+    background: transparent;
+    color: #ff4800;
+    border: 2px solid #ff4800
+}
+#source:hover {
+    color: white;
+    border: none;
+    box-shadow: none;
+    background: linear-gradient(to right,  #ee1d16, #ff6a00);
+}
+footer {
+    background: #15022e;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+    .flex-container {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1100px) {            
+    .flex-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .left {
+        width: 35%;
+    }
+    .right {
+        width: 55%;
+    }
+    .container p {
+        width: 100%;
+    }
+    .scroll-top-container {
+        bottom: 30px;
+        right: 30px;
+    }
+    .scroll-top-container i {
+        padding: 15px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    h1 {
+    font-size: 30px;
+    }
+    .flex-item {
+        flex-direction: column;
+        width: 80%;
+    }
+    .left {
+        width: 100%
+    }
+    .right {
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    header div:first-child {
+        margin-left: 15px;
+    }
+    header img {
+        width: 80px;
+        padding-top: 0px;
+    }
+    h1 {
+        font-size: 27px;
+    }
+    .flex-item {
+        width: 90%;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .scroll-top-container {
+        bottom: 20px;
+        right: 15px;
+    }
+    .scroll-top-container i {
+        padding: 13px;
+        font-size: 15px;
+    }
+    .scroll-top-container i:hover {
+        transform: scale(1.2);
+    }
+}
+@media only screen and (max-width: 400px) {
+    h1 {
+        opacity: 0;
+    }
+    p   {
+        font-size: 1.1rem;
+    }
+    header div {
+        margin-right: 0;
+    }
+}
