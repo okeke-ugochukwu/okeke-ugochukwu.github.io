@@ -1,11 +1,13 @@
 body {   
     background: hsl(266, 92%, 14%);
     color: rgb(219, 219, 219);
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 header {
     color: #F4F6FC; 
+}
+#header2 {
+    background: hsl(266, 92%, 14%);
+    box-shadow: 0px 15px 20px #15022e;
 }
 footer {
     background: #15022e;
@@ -33,8 +35,6 @@ footer {
     border: 2px solid #ff4800;
 }
 .action-btn a {
-    display: block;
-    text-decoration: none;
     color: inherit;
 }
 
@@ -45,11 +45,7 @@ footer {
 .field {
     background: #15022e;
 }
-textarea {
-    height: 150px;
-    resize: none;
-    width: 99%;
-    scrollbar-width: 9px;              
+textarea {     
     scrollbar-color: #490FCF ;
 }
 textarea::-webkit-scrollbar {
@@ -57,16 +53,12 @@ textarea::-webkit-scrollbar {
 }
 textarea::-webkit-scrollbar-thumb {
     background: #490FCF;
-    border-radius: 10px;
-    height: 10px;
 }
 input, 
 textarea {
     background: #15022e;
-    border: none;
     caret-color: #490FCF;
     color: #F4F6FC;
-    font-weight: 400;
 }
 input::placeholder,
 input:-ms-input-placeholder,

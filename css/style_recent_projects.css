@@ -74,10 +74,19 @@ header {
     position: relative;
     transition: .7s;
 }
-header img {
+.color-modes {
+    width: 50px;
+    position: absolute;
+    right: 100px;
+    top: 40px;
+}
+#light-mode-icon {
+    display: none;
+}
+/* header img {
     width: 90px;
     padding: 10px;
-}
+} */
 header div:first-child {
     margin-left: 50px;
 }
@@ -265,5 +274,12 @@ footer a {
     }
     header div {
         margin-right: 0;
+    }
+}
+@media only screen and (max-width: 635px) {
+    .color-modes {
+        top: 20px;
+        right: 30px;
+        width: 35px;
     }
 }

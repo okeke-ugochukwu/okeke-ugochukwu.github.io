@@ -9,7 +9,13 @@
         <link rel="shortcut icon" href="img/favicon.png" type="image/png">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style_darkmode_recent_projects.css">
+
+        <!-- Dark mode works based on stylesheet succession -->
+        <link rel="stylesheet"href="css/style_recent_projects.css" id="light-mode-css">
+        <link rel="stylesheet" href="" id="dark-mode-css">
+        <!-- <link rel="stylesheet" href="css/style_darkmode_recent_projects.css"> -->
+
+
         <!--<link rel="stylesheet" href="Line Awesome/css/line-awesome.min.css">-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css ">
@@ -54,17 +60,17 @@
 
         <!--Main page container-->
         <div class="container">
-            <header>    
+            <header id="header2">    
                 <div>
                     <h1>
                         My Recent Projects.
                     </h1>
                 </div>
 
-                <div>
-                    <a href="index.html">
-                        <img src="img/page_icon.png" alt="home">
-                    </a>
+                <div >
+                      <!-- color mode switch buttons -->
+                <img src="./img/light_mode.png" alt="light_mode_icon" class="color-modes" id="light-mode-icon" onclick="switchLightMode()">
+                <img src="./img/dark_mode.png" alt="dark_mode_icon" class="color-modes" id="dark-mode-icon" onclick="switchDarkMode()">
                 </div>
             </header>
 
