@@ -99,8 +99,8 @@ header {
     padding: 13px 15px;
     border-radius: 50px;
     background: transparent;
-    color: #6832e3;
-    border: 2px solid rgb(104, 50, 227);
+    color: white;
+    border: 2px solid white;
 }
 .action-btn:hover{
     transform: scale(1.1);

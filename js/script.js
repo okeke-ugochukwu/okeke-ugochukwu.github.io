@@ -70,6 +70,9 @@ var inputNodeList = document.getElementsByClassName("input-field");
         }
     }
 
+
+
+//repce style href and change color-mode-icon
 function switchDarkMode() {
     document.getElementById("dark-mode-css").setAttribute("href", "css/style_darkmode.css");
     document.getElementById("dark-mode-icon").style.display = "none";
