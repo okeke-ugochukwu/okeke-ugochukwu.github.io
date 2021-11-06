@@ -13,7 +13,7 @@
 html {
     scroll-behavior: smooth;
 }
-body {   
+body {
     background: white;
     color: rgb(102, 49, 227);
     overflow-x: hidden;
@@ -26,7 +26,7 @@ p {
 
 /*firefox fix*/
 body {
-    scrollbar-width: 9px;              
+    scrollbar-width: 9px;
     scrollbar-color: #490FCF;
 }
 /*chrome etc fix*/
@@ -60,7 +60,6 @@ header {
     font-size: 2.3rem;
     font-weight: 700;
 }
-
 #front-end {
     background: linear-gradient(to left, #ff512f 0%, #f07a19 51%, #ff512f 100%);
     background-size: 400% auto;
@@ -70,7 +69,7 @@ header {
 }
 @keyframes fadeaquarium {
     0% {
-        
+
     }
     50% {
         background-position: right;
@@ -184,8 +183,8 @@ section .hey {
 
 
 
-.download-btn { 
-    align-items: center;  
+.download-btn {
+    align-items: center;
     width: max-content;
     padding: 10px 12px;
     font-size: 1.1rem;
@@ -232,13 +231,45 @@ section .hey {
     margin-bottom: 80px;
 }
 .grid-item {
-   width: 93%; 
+   width: 93%;
 }
 .thumbnail {
     width: 100%;
     height: 200px;
     border-radius: 10px;
     background: #490FCF;
+}
+.thumbnail:hover {
+    transform: scale(1.02)
+}
+.grid-item .thumbnail {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item:first-child .thumbnail {
+    background: url('../img/thankgodpay_preview_3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item:nth-child(2) .thumbnail {
+    background: url('../img/portfolio_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item:nth-child(3) .thumbnail {
+    background: url('../img/chatapp_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item:nth-child(4) .thumbnail {
+    background: url('../img/id_gen_preview_1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .thumbnail-descr h3 {
     font-size: 30px;
@@ -392,7 +423,7 @@ textarea {
     height: 150px;
     resize: none;
     width: 99%;
-    scrollbar-width: 9px;              
+    scrollbar-width: 9px;
     scrollbar-color: #490FCF ;
 }
 textarea::-webkit-scrollbar {
@@ -403,7 +434,7 @@ textarea::-webkit-scrollbar-thumb {
     border-radius: 10px;
     height: 10px;
 }
-input, 
+input,
 textarea {
     background: #F4F6FC;
     border: none;
@@ -558,7 +589,7 @@ footer a {
         width: 450px;
     }
     header {
-        margin-bottom: 300px;    
+        margin-bottom: 300px;
     }
     section {
         margin-bottom: 50px;
@@ -603,7 +634,7 @@ footer a {
         justify-content: center;
         align-items: center;
     }
-    .contact-section .hey, 
+    .contact-section .hey,
     .contact-section p {
         text-align: center;
         width: unset;
@@ -616,7 +647,7 @@ footer a {
     }
     .social-icons-links i {
         font-size: 27px;
-        
+
     }
     .scroll-top-container {
         bottom: 30px;
@@ -650,7 +681,7 @@ footer a {
     }
     .social-icons-links i {
         font-size: 25px;
-        
+
     }
 }
 
@@ -671,7 +702,7 @@ footer a {
 }
 
 @media only screen and (max-width: 359px) {
-    
+
     input {
         width: 85%;
     }
@@ -701,7 +732,7 @@ footer a {
         display: none;
     }
     header {
-        margin-bottom: 100px;    
+        margin-bottom: 100px;
     }
     #page-icon {
         display: none;
@@ -845,10 +876,4 @@ footer a {
         width: 870px;
         margin-left: -130px;
     }
-} 
-
-
-
-
-
-
+}

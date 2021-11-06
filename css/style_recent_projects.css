@@ -14,7 +14,7 @@ html {
 
 /*firefox fix*/
 body {
-    scrollbar-width: 9px;              
+    scrollbar-width: 9px;
     scrollbar-color: #490FCF;
 }
 /*chrome etc fix*/
@@ -125,6 +125,51 @@ h1 {
     border-radius: 10px;
     background: #490FCF;
 }
+.thumbnail:hover {
+    transform: scale(1.02);
+}
+.flex-item:first-child .thumbnail {
+    background: url('../img/portfolio_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flex-item:nth-child(2) .thumbnail {
+    background: url('../img/id_gen_preview_1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flex-item:nth-child(3) .thumbnail {
+    background: url('../img/chatapp_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flex-item:nth-child(4) .thumbnail {
+    background: url('../img/article_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flex-item:nth-child(5) .thumbnail {
+    background: url('../img/music_player_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flex-item:nth-child(6) .thumbnail {
+    background: url('../img/spectrum_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.flex-item:nth-child(7) .thumbnail {
+    background: url('../img/rps_preview.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 h3 {
     margin-top: 20px;
     font-size: 30px;
@@ -198,7 +243,7 @@ footer a {
         width: 90%;
     }
 }
-@media only screen and (max-width: 1100px) {            
+@media only screen and (max-width: 1100px) {
     .flex-container {
         width: 100%;
         margin-top: 10px;
@@ -234,7 +279,7 @@ footer a {
     .right {
         width: 100%;
     }
-    
+
 }
 @media only screen and (max-width: 500px) {
     header div:first-child {
