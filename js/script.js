@@ -13,7 +13,7 @@ $("#toon").on("load", function() {
             "slow");
     });
 
-    
+
 //Scroll to top
 $("#scoll-top-btn").click(function() {
     $("html,body").animate({
@@ -29,7 +29,7 @@ window.addEventListener("scroll", checkPosition);
 function checkPosition() {
     var scrollPosition = 700;
     var scrollTopBtn = document.querySelector(".scroll-top-container");
-    
+
     var windowY = window.scrollY;
     if ( windowY < scrollPosition) {
        scrollTopBtn.style.transform = "scale(0)";
@@ -59,7 +59,7 @@ $("#submit-btn").click(function () {
 
 //Form input scale tranform
 var inputNodeList = document.getElementsByClassName("input-field");
-    var i; 
+    var i;
     for (i = 0; i < inputNodeList.length; i++) {
         inputNodeList[i].onfocus = function() {
             this.parentElement.style.transform = "scale(1.05)";
@@ -84,3 +84,4 @@ function switchLightMode() {
     document.getElementById("dark-mode-icon").style.display = "block";
     document.getElementById("light-mode-icon").style.display = "none";
 }
+
