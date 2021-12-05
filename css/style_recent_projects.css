@@ -73,6 +73,7 @@ header {
     background-color: white;
     position: relative;
     transition: .7s;
+    z-index: 1
 }
 .color-modes {
     width: 50px;

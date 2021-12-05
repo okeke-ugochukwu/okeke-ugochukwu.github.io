@@ -1,3 +1,5 @@
+
+
 $("#toon").on("load", function() {
     $(".intro").fadeOut("fast");
     $(".page").css("opacity", "1");
