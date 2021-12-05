@@ -63,6 +63,7 @@ function switchLightMode() {
 
 // animations
 // aos animation library + some DOM manipulation
+//loop thought a list of elements and add aos animtion library attributes to them
 var thumbnailsNodeList = document.getElementsByClassName("thumbnail"); var t;
     for (t = 0; t <  thumbnailsNodeList.length; t++) {
         thumbnailsNodeList[t].setAttribute("data-aos", "zoom-in-up");

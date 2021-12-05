@@ -1,3 +1,15 @@
+var modePreference = localStorage.getItem("colorMode");
+console.log(modePreference);
+
+if (modePreference == "dark") {
+    switchDarkMode();
+}
+else if (modePreference == "light") {
+    switchLightMode();
+}
+
+
+
 
 
 $("#toon").on("load", function() {
@@ -79,11 +91,12 @@ function switchDarkMode() {
     document.getElementById("dark-mode-css").setAttribute("href", "css/style_darkmode.css");
     document.getElementById("dark-mode-icon").style.display = "none";
     document.getElementById("light-mode-icon").style.display = "block";
+    localStorage.setItem("colorMode", "dark");
 }
 
 function switchLightMode() {
     document.getElementById("dark-mode-css").removeAttribute("href");
     document.getElementById("dark-mode-icon").style.display = "block";
     document.getElementById("light-mode-icon").style.display = "none";
+    localStorage.setItem("colorMode", "light");
 }
-
