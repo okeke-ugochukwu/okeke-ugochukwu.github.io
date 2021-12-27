@@ -1,13 +1,16 @@
-var modePreference = localStorage.getItem("colorMode");
-console.log(modePreference);
+$(document).ready(function() {
 
-if (modePreference == "dark") {
-    switchDarkMode();
-}
-else if (modePreference == "light") {
-    switchLightMode();
-}
+        var modePreference = localStorage.getItem("colorMode");
+        console.log(modePreference);
 
+        if (modePreference == "dark") {
+            switchDarkMode();
+        }
+        else if (modePreference == "light") {
+            switchLightMode();
+        }
+
+})
 
 
 
