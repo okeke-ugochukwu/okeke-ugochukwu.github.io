@@ -1,12 +1,4 @@
-var modePreference = localStorage.getItem("colorMode");
-console.log(modePreference);
 
-if (modePreference == "dark") {
-    switchDarkMode();
-}
-else if (modePreference == "light") {
-    switchLightMode();
-}
 
 window.addEventListener("scroll", makeHeaderSticky);
 
@@ -27,6 +19,7 @@ function makeHeaderSticky() {
     }
     scrollPosition = windowY;
 }
+
 
 $("#scoll-top-btn").click(function() {
     $("html,body").animate({
@@ -54,6 +47,17 @@ function checkPosition() {
         scrollTopBtn.style.transform = "unset"
     }
     scrollPosition = windowY;
+}
+
+
+var modePreference = localStorage.getItem("colorMode");
+console.log(modePreference);
+
+if (modePreference == "dark") {
+    switchDarkMode();
+}
+else if (modePreference == "light") {
+    switchLightMode();
 }
 
 //repce style href and change color-mode-icon
