@@ -1,11 +1,14 @@
+//select light/dark mode when document is ready.
 $(document).ready(function() {
 
+        //get color mode data saved locally
         var modePreference = localStorage.getItem("colorMode");
-        console.log(modePreference);
 
+        //check color mode value
         if (modePreference == "dark") {
             switchDarkMode();
         }
+        //call styling function
         else if (modePreference == "light") {
             switchLightMode();
         }
