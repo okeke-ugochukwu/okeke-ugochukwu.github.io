@@ -10,7 +10,7 @@ function makeHeaderSticky() {
     if ( windowY > scrollPosition) {
         headerElement.style.position = "fixed";
         headerElement.style.top = "0";
-        headerElement.style.boxShadow = "0px 1px 10px #1f0345"
+        headerElement.style.boxShadow = "0px -10px 50px #1f034563"
     }
     else {
         headerElement.style.position = "relative"

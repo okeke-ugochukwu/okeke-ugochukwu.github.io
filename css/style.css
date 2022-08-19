@@ -247,32 +247,32 @@ section .hey {
     background-position: center;
     background-repeat: no-repeat;
 }
-/* thankgodpay thumbail */
+/* anayo.me thumbail */
 .grid-item:first-child .thumbnail {
-    background: url('../img/thankgodpay_preview_3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-/* anayo.me thumbnail */
-.grid-item:nth-child(2) .thumbnail {
     background: url('../img/anayos_port_preview.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-/* id generator thumbnail */
-.grid-item:nth-child(3) .thumbnail {
-    background: url('../img/id_gen_preview_1.png');
+/* estherewilliams.com thumbnail */
+.grid-item:nth-child(2) .thumbnail {
+    background: url('../img/esther_port_preview.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
 }
-/* chat app landing page thumbnail */
-.grid-item:nth-child(4) .thumbnail {
-    background: url('../img/chatapp_preview.png');
+/* paulomotayo.com thumbnail */
+.grid-item:nth-child(3) .thumbnail {
+    background: url('../img/pauls_port_preview.png');
     background-size: cover;
-    background-position: center;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+/* micrographia.design thumbnail */
+.grid-item:nth-child(4) .thumbnail {
+    background: url('../img/micrographia_preview.png');
+    background-size: cover;
+    background-position: left;
     background-repeat: no-repeat;
 }
 .thumbnail-descr h3 {
