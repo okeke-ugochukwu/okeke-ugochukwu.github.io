@@ -24,7 +24,7 @@
 
 
         <meta name="description" content="Front-end Developer">
-        <meta name="keywords" content="Ugochukwu, Okeke, Front-end, Developer, Frontend, Software, Mr.pianoman, Javascript, Projects, Development, Skills, Contact, Profile, Resume, Nigeria, Uyo, Abia">
+        <meta name="keywords" content="Ugochukwu, Okeke, Front-end, Developer, Frontend, Software, theCavyDev, Javascript, Projects, Development, Skills, Contact, Profile, Resume, Nigeria, Uyo, Abia">
         <meta name="theme-color" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -55,6 +55,7 @@
 
     <body>
 
+         <!-- PRELOADER -->
         <div class="intro">
             <div id="preloader">
                 <div id="loader">
@@ -64,480 +65,481 @@
         </div>
 
         <div class="page" style="position: relative;">
-            <!-- scroll to top button -->
-        <div class="scroll-top-container" class="">
-            <button id="scoll-top-btn">
-                <i class="la la-angle-up"></i>
-            </button>
-        </div>
+         
+            <!-- SCROLL TO TOP BUTTON -->
+            <div class="scroll-top-container" class="">
+                  <button id="scoll-top-btn">
+                     <i class="la la-angle-up"></i>
+                  </button>
+            </div>
 
-        <div class="container">
+         <div class="container">
 
-            <!--Into-->
-            <header>
-                <!-- color mode switch buttons -->
-                <img src="./img/light_mode.png" alt="light_mode_icon" class="color-modes" id="light-mode-icon" onclick="switchLightMode()">
-                <img src="./img/dark_mode.png" alt="dark_mode_icon" class="color-modes" id="dark-mode-icon" onclick="switchDarkMode()">
+               <!--Into-->
+               <header>
+                  <!-- color mode switch buttons -->
+                  <img src="./img/light_mode.png" alt="light_mode_icon" class="color-modes" id="light-mode-icon" onclick="switchLightMode()">
+                  <img src="./img/dark_mode.png" alt="dark_mode_icon" class="color-modes" id="dark-mode-icon" onclick="switchDarkMode()">
 
-                <div class="space">
-                    <a href="https://okeke-ugochukwu.github.io/">
-                       <img src="img/page_icon.png" alt="page_icon" id="page-icon">
-                    </a>
-                </div>
-
-               <div class="hey"
-                    data-aos="fade-up"
-                    data-aos-offset="0"
-                    data-aos-easing="ease-in-out">
-                    <!-- <span id="name" data-aos="fade-up">Hi, I'm Ugo.</span> <br /> -->
-                    Hi, I'm Ugo. <br />
-                    I'm a <span id="front-end">front-end</span> developer from nigeria.
-               </div>
-
-               <div class="role"
-                    data-aos="fade-up"
-                    data-aos-delay="200"
-                    data-aos-easing="ease-in-out">
-                   I love to build simple and beautiful user interfaces.
-               </div>
-
-               <div class="header-buttons">
-                   <div class="btn"
-                        id="projects"
-                        onmouseover="changeIcon()"
-                        onmouseout="initialIcon()"
-                        data-aos="fade-up"
-                        data-aos-delay="250"
-                        data-aos-easing="ease-in-out"
-                   >
-                        <div class="action-btn">
-                            <div id="project-icon-box">
-                                <img src="img/project_6a38d8.png" alt="project-icon" id="project-icon">
-                            </div>
-
-                            <div>Projects</div>
-                        </div>
-
-                   </div>
-                   <div class="btn"
-                        data-aos="fade-up"
-                        data-aos-delay="250"
-                        data-aos-easing="ease-in-out">
-                        <div class="action-btn">
-                            <a href="resume-ugo.pdf" download="Okeke Ugochukwu's Resume">Resume</a>
-                        </div>
-                   </div>
-               </div>
-
-               <img loading="eager" src="img/svg/profile_toon.png" alt="image_of_ugochukwu"  id="toon">
-
-            </header>
-
-            <main>
-                <!--About section-->
-              <section>
-                 <div class="left"
-                      data-aos="fade-right"
-                      data-aos-offset="300"
-                      data-aos-duration="800">
-                    <img loading="lazy" src="img/svg/about.png" alt="abstract_background" class="ui-images">
-                 </div>
-
-                 <div class="right">
-                    <div class="hey"
-                        data-aos="fade-up"
-                        data-aos-offset="200"
-                        data-aos-duration="800">
-                    This is me.
-                    </div>
-
-                    <br class="break" />
-
-                    <p  data-aos="fade-up"
-                        data-aos-delay="100"
-                        data-aos-duration="800">
-                    My name is Ugochukwu Okeke, and I'm based in Eastern Nigeria.
-                    I'm a technology enthusiast, and I enjoy building user interfaces.
-                    </p>
-
-                     <p data-aos="fade-up"
-                        data-aos-delay="100"
-                        data-aos-duration="800">
-                        It's been about three years since I started coding,
-                        and there's so much to learn in the ever evolving world of tech, but so far I'm loving it!
-                    </p>
-
-                    <br />
-
-                    <p  data-aos="fade-up"
-                        data-aos-delay="100"
-                        data-aos-duration="800">
-                        I'm currently studying Computer Engineering in the
-                        <a href="https://uniuyo.edu.ng/" target="blank">University of Uyo</a>, Nigeria.
-                    </p>
-
-                    <div class="line"
-                         data-aos="fade-up"
-                         data-aos-delay="300"
-                         data-aos-duration="800">
-                    </div>
-                 </div>
-              </section>
-
-              <!--Skills section-->
-              <section>
-                    <div class="right">
-                        <div class="hey"
-                             data-aos="fade-up"
-                             data-aos-offset="500"
-                             data-aos-duration="800">
-                            My Skills
-                        </div>
-
-                        <br class="break" />
-
-                        <p  data-aos="fade-up"
-                            data-aos-offset="500"
-                            data-aos-duration="800">
-                            My strongest skills are the basics HTML, CSS (SCSS) and JS (I can make magic with these three alone!). 
-                            But I also got hands on, JQuery, CMS (Wordpress), Vue.js, NPM, APIs, SEO tools, and Googling (yes please)
-
-
-                            <br /><br />
-                            My tools include: VS-Code, Figma, Git, Github, Adobe Photoshop, Adobe Illustrator
-
-                            <br /><br />
-                            <strong>Bonus tip:</strong> I'm aspiring Full-Stack :)
-
-                        </p>
-
-                        <div class="download-btn"
-                             data-aos="fade-up"
-                             data-aos-offset="200"
-                             data-aos-duration="800">
-                            <a href="resume-ugo.pdf" download="Okeke Ugochukwu's Resume">Get Resume</a>
-                        </div>
-                    </div>
-
-                    <div class="left"
-                         data-aos="fade-left"
-                         data-aos-offset="500"
-                         data-aos-duration="400">
-                        <img loading="lazy" src="img/svg/skills.png" alt="" class="ui-images">
-                    </div>
-
-              </section>
-
-              <!--Values section-->
-              <section>
-                <div class="left"
-                     data-aos="fade-right"
-                     data-aos-offset="400"
-                     data-aos-duration="00">
-                   <img loading="lazy"  src="img/svg/values.png" alt="abstract_background" class="ui-images">
-                </div>
-
-                <div class="right">
-                    <div class="hey"
-                         data-aos="fade-up"
-                         data-aos-offset="400"
-                         data-aos-duration="800">
-                       My values.
-                    </div>
-
-                    <br class="break" />
-
-                    <p
-
-                        data-aos="fade-up"
-                        data-aos-duration="800"
-                        data-aos-offset="490">
-                        When I build for the web, I focus on three key things: Resposiveness/Accessibility, Performance and Design. <br />
-                        I believe this three concepts in their proper proportions make for a good website/webapp user experience.
-                    </p>
-
-                   <div class="line"
-                        data-aos="fade-up"
-                        data-aos-offset="300"
-                        data-aos-delay="200"
-                        data-aos-duration="800">
-                    </div>
-                </div>
-              </section>
-
-              <!--Projects section-->
-              <section id="proj-section" >
-                  <div class="sub-section">
-                      <div  class="hey thumbnail-1-anchor"
-                            data-aos="fade-up"
-                            data-aos-offset="300"
-                            data-aos-delay="300">
-                          Some Stuff I've Built.
-                      </div>
-
-                      <div class="grid-container">
-
-                        <!-- anayo.me -->
-                        <div class="grid-item">
-                            <a  href="https://anayo.me"
-                                target="_blank">
-                                    <div class="thumbnail"
-                                         data-aos="fade-up"
-                                         data-aos-delay="600"
-                                         data-aos-offset="200"
-                                        data-aos-delay="500"
-                                        data-aos-duration="600">
-
-                                    </div>
-                            </a>
-
-                            <div class="thumbnail-descr">
-                                <h3 data-aos="fade-up"
-                                    data-aos-delay="650">
-                                     Anayo.me
-                                </h3>
-
-                                <p  data-aos="fade-up"
-                                    data-aos-delay="700">
-                                    Portfolio website for Product / UI & UX Designer <a href="https://twitter.com/ObiajuluAnayo">@ObiajuluAnayo</a>.
-                                </p>
-
-                                <div class="project-btns">
-                                    <button data-aos="fade-up"
-                                        data-aos-delay="750">
-                                        <a href="https://anayo.me/" target="blank" >Live</a>
-                                    </button>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- estherewiiliams.com -->
-                        <div class="grid-item">
-                            <a href="https://estherewilliams.com" target="blank">
-                                <div class="thumbnail h3_offset"
-                                     data-aos="zoom-in-up"
-                                     data-aos-offset="200"
-                                     data-aos-delay="500"
-                                     data-aos-duration="600">
-
-                                </div>
-                            </a>
-
-                            <div class="thumbnail-descr">
-                                <h3 data-aos="fade-up"
-                                    data-aos-delay="550">
-                                    Esther E. Williams
-                                </h3>
-
-                                <p  data-aos="fade-up"
-                                    data-aos-delay="600">
-                                    Portfolio/Bussiness website for Beauty Therapist & Aesthetician 
-                                    <a href="https://twitter.com/estaregwunye?t=Uq3a_MWj7bAbaHW5KnPsVg&s=09" target="_blank">@EstherWilliams</a>
-                                </p>
-
-                                <div class="project-btns">
-                                    <button data-aos="fade-up"
-                                            data-aos-delay="650">
-                                        <a href="https://estherewilliams.com" target="blank">Live</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- paulomotayo.com -->
-                        <div class="grid-item">
-                            <a href="https://paulomotayo.com" target="_blank" >
-                                <div class="thumbnail"
-                                    data-aos="fade-up"
-                                    data-aos-offset="200"
-                                    data-aos-delay="650"
-                                    data-aos-delay="500"
-                                    data-aos-duration="600">
-
-                                </div>
-                            </a>
-
-                            <div class="thumbnail-descr">
-                                <h3 data-aos="fade-up"
-                                    data-aos-delay="700">
-                                    Paul Omotayo
-                                </h3>
-
-                                <p  data-aos="fade-up"
-                                    data-aos-delay="750">
-                                    Portfolio website for Product Designer/ UI & UX Designer
-                                    <a href="htpps://paulomotayo.com" target="_blank">@PaulOmotayo</a>
-                                </p>
-
-                                <div class="project-btns">
-                                    <button data-aos="fade-up"
-                                            data-aos-delay="800">
-                                        <a href="https://paulomotayo.com" target="blank">Live</a>
-                                    </button> 
-                                </div>
-                            </div>
-                        </div>
-
-                         <!-- micrographia.design -->
-                         <div class="grid-item">
-                            <a href="https://micrographia.design" target="_blank">
-                                <div class="thumbnail"
-                                     data-aos="fade-up"
-                                     data-aos-offset="200"
-                                     data-aos-delay="700"
-                                     data-aos-duration="600">
-
-                                </div>
-                            </a>
-
-                            <div class="thumbnail-descr">
-                                <h3 data-aos="fade-up"
-                                    data-aos-delay="750">
-                                    Micrographia.design
-                                </h3>
-
-                                <p  data-aos="fade-up"
-                                    data-aos-delay="800">
-                                    Bussiness website for Product & Design Agency 
-                                    <a href="https://micrographia.design" target="_blank">@Micrographia Solutions</a>
-
-                                <div class="project-btns">
-                                    <button data-aos="fade-up"
-                                        data-aos-delay="850">
-                                        <a href="https://micrographia.design" target="blank" >Live</a>
-                                    </button>
-
-                                   
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-
-                      <div  class="more-proj-btn-container"
-                                data-aos="zoom-in-up"
-                                data-aos-offset="50"
-                                data-aos-delay="1000">
-                          <button class="more-projects">
-                              <a href="recent_projects.html">See More</a>
-                          </button>
-                      </div>
+                  <div class="space">
+                     <a href="https://okeke-ugochukwu.github.io/">
+                        <img src="img/page_icon.png" alt="page_icon" id="page-icon">
+                     </a>
                   </div>
-              </section>
 
-              <!--Contact section-->
-              <section>
-                    <div class="contact-section">
+                  <div class="hey"
+                     data-aos="fade-up"
+                     data-aos-offset="0"
+                     data-aos-easing="ease-in-out">
+                     <!-- <span id="name" data-aos="fade-up">Hi, I'm Ugo.</span> <br /> -->
+                     Hi, I'm Ugo. <br />
+                     I'm a <span id="front-end">front-end</span> developer from nigeria.
+                  </div>
 
-                        <div class="right">
-                            <div class="hey"
-                                 data-aos="fade-up">
-                                Wanna get in touch?
-                            </div>
+                  <div class="role"
+                     data-aos="fade-up"
+                     data-aos-delay="200"
+                     data-aos-easing="ease-in-out">
+                     I love to build simple and beautiful user interfaces.
+                  </div>
 
-                            <p  data-aos="fade-up"
-                                data-aos-delay="100">
-                                You could connect with me on these platforms
-                            </p>
+                  <div class="header-buttons">
+                     <div class="btn"
+                           id="projects"
+                           onmouseover="changeIcon()"
+                           onmouseout="initialIcon()"
+                           data-aos="fade-up"
+                           data-aos-delay="250"
+                           data-aos-easing="ease-in-out"
+                     >
+                           <div class="action-btn">
+                              <div id="project-icon-box">
+                                 <img src="img/project_6a38d8.png" alt="project-icon" id="project-icon">
+                              </div>
 
-                            <div class="social-icons-links">
-                                <a href="https://twitter.com/pianomann_" target="blank">
-                                    <i class="la la-twitter"
-                                        data-aos="zoom-in-up">
-                                    </i>
-                                </a>
-                                <a href="https://linkedin.com/in/ugochukwuokeke/" target="blank">
-                                    <i  class="la la-linkedin"
-                                        data-aos="zoom-in-up"
-                                        data-aos-delay="100">
-                                    </i>
-                                </a>
-                                <a href="https://facebook.com/ugochukwu.okeke.798" target="blank">
-                                    <i  class="la la-facebook-f"
-                                        data-aos="zoom-in-up"
-                                        data-aos-delay="150">
-                                    </i>
-                                </a>
-                                <a href="https://instagram.com/mr.pianoman_" target="blank">
-                                    <i class="la la-instagram"
-                                        data-aos="zoom-in-up"
-                                        data-aos-delay="200">
-                                    </i>
-                                </a>
-                            </div>
+                              <div>Projects</div>
+                           </div>
 
-                            <p  data-aos="fade-up"
-                                data-aos-delay="200">
-                                    Or just message me via this form and I'll reply you as quickly as possible!
-                            </p>
+                     </div>
+                     <div class="btn"
+                           data-aos="fade-up"
+                           data-aos-delay="250"
+                           data-aos-easing="ease-in-out">
+                           <div class="action-btn">
+                              <a href="resume-ugo.pdf" download="Okeke Ugochukwu's Resume">Resume</a>
+                           </div>
+                     </div>
+                  </div>
 
-                            <div class="form-container">
-                                <!-- <form action="./php/mailer.php" method="POST"> -->
-                                <!-- <form action="https://thankgodpay.com/github/mailer.php" method="POST"> -->
-                                <form action="https://getform.io/f/715060c2-ac3e-4d10-ac13-4e0cd12bb4a2" method="POST">
-                                    <div class="field"
-                                         data-aos="fade-up"
-                                         data-aos-delay="300">
-                                        <i class="la la-user"></i>
-                                        <input type="text" name="Name" class="input-field" placeholder="Your name">
-                                    </div>
+                  <img loading="eager" src="img/svg/profile_toon.png" alt="image_of_ugochukwu"  id="toon">
+
+               </header>
+
+               <main>
+                  <!--About section-->
+               <section>
+                  <div class="left"
+                        data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-duration="800">
+                     <img loading="lazy" src="img/svg/about.png" alt="abstract_background" class="ui-images">
+                  </div>
+
+                  <div class="right">
+                     <div class="hey"
+                           data-aos="fade-up"
+                           data-aos-offset="200"
+                           data-aos-duration="800">
+                     This is me.
+                     </div>
+
+                     <br class="break" />
+
+                     <p  data-aos="fade-up"
+                           data-aos-delay="100"
+                           data-aos-duration="800">
+                     My name is Ugochukwu Okeke, and I'm based in Eastern Nigeria.
+                     I'm a technology enthusiast, and I enjoy building user interfaces.
+                     </p>
+
+                        <p data-aos="fade-up"
+                           data-aos-delay="100"
+                           data-aos-duration="800">
+                           It's been about three years since I started coding,
+                           and there's so much to learn in the ever evolving world of tech, but so far I'm loving it!
+                     </p>
+
+                     <br />
+
+                     <p  data-aos="fade-up"
+                           data-aos-delay="100"
+                           data-aos-duration="800">
+                           I'm currently studying Computer Engineering in the
+                           <a href="https://uniuyo.edu.ng/" target="blank">University of Uyo</a>, Nigeria.
+                     </p>
+
+                     <div class="line"
+                           data-aos="fade-up"
+                           data-aos-delay="300"
+                           data-aos-duration="800">
+                     </div>
+                  </div>
+               </section>
+
+               <!--Skills section-->
+               <section>
+                     <div class="right">
+                           <div class="hey"
+                              data-aos="fade-up"
+                              data-aos-offset="500"
+                              data-aos-duration="800">
+                              My Skills
+                           </div>
+
+                           <br class="break" />
+
+                           <p  data-aos="fade-up"
+                              data-aos-offset="500"
+                              data-aos-duration="800">
+                              My strongest skills are the basics HTML, CSS (SCSS) and JS (I can make magic with these three alone!). 
+                              But I also got hands on, JQuery, CMS (Wordpress), Vue.js, NPM, APIs, SEO tools, and Googling (yes please)
 
 
-                                    <div class="field"
-                                         data-aos="fade-up"
-                                         data-aos-delay="350">
-                                        <i class="la la-envelope"></i>
-                                        <input type="email" name="Email" class="input-field" placeholder="Your email">
-                                    </div>
+                              <br /><br />
+                              My tools include: VS-Code, Figma, Git, Github, Adobe Photoshop, Adobe Illustrator
 
-                                    <div class="field"
-                                         data-aos="fade-up"
-                                         data-aos-delay="400">
-                                        <textarea name="Message" class="input-field" placeholder="Your message" id="text-area"></textarea>
-                                    </div>
+                              <br /><br />
+                              <strong>Bonus tip:</strong> I'm aspiring Full-Stack :)
 
-                                    <div class="field"
-                                         data-aos="fade-up"
-                                         data-aos-delay="450">
-                                        <div class="g-recaptcha" data-sitekey="6LfoXPgZAAAAAGEDv_7ZgVy9oiHCsJfPV0eyINQ4"></div>
-                                    </div>
+                           </p>
 
-                                    <div class="field"
-                                         data-aos="zoom-in--up"
-                                         data-aos-delay="500">
-                                        <input type="submit" value="Send Message" id="submit-btn">
-                                    </div>
+                           <div class="download-btn"
+                              data-aos="fade-up"
+                              data-aos-offset="200"
+                              data-aos-duration="800">
+                              <a href="resume-ugo.pdf" download="Okeke Ugochukwu's Resume">Get Resume</a>
+                           </div>
+                     </div>
 
-                                </form>
-                            </div>
+                     <div class="left"
+                           data-aos="fade-left"
+                           data-aos-offset="500"
+                           data-aos-duration="400">
+                           <img loading="lazy" src="img/svg/skills.png" alt="" class="ui-images">
+                     </div>
+
+               </section>
+
+               <!--Values section-->
+               <section>
+                  <div class="left"
+                        data-aos="fade-right"
+                        data-aos-offset="400"
+                        data-aos-duration="00">
+                     <img loading="lazy"  src="img/svg/values.png" alt="abstract_background" class="ui-images">
+                  </div>
+
+                  <div class="right">
+                     <div class="hey"
+                           data-aos="fade-up"
+                           data-aos-offset="400"
+                           data-aos-duration="800">
+                        My values.
+                     </div>
+
+                     <br class="break" />
+
+                     <p
+
+                           data-aos="fade-up"
+                           data-aos-duration="800"
+                           data-aos-offset="490">
+                           When I build for the web, I focus on three key things: Resposiveness/Accessibility, Performance and Design. <br />
+                           I believe this three concepts in their proper proportions make for a good website/webapp user experience.
+                     </p>
+
+                     <div class="line"
+                           data-aos="fade-up"
+                           data-aos-offset="300"
+                           data-aos-delay="200"
+                           data-aos-duration="800">
+                     </div>
+                  </div>
+               </section>
+
+               <!--Projects section-->
+               <section id="proj-section" >
+                     <div class="sub-section">
+                        <div  class="hey thumbnail-1-anchor"
+                              data-aos="fade-up"
+                              data-aos-offset="300"
+                              data-aos-delay="300">
+                           Some Stuff I've Built.
                         </div>
 
-                       <div class="social-img-container"
-                            data-aos="fade-up"
-                            data-aos-delay="600">
-                           <img loading="lazy" src="img/svg/contact.png" alt="3d social_illustration" class="social-img">
-                       </div>
-                    </div>
-              </section>
-            </main>
+                        <div class="grid-container">
+
+                           <!-- anayo.me -->
+                           <div class="grid-item">
+                              <a  href="https://anayo.me"
+                                 target="_blank">
+                                       <div class="thumbnail"
+                                          data-aos="fade-up"
+                                          data-aos-delay="600"
+                                          data-aos-offset="200"
+                                          data-aos-delay="500"
+                                          data-aos-duration="600">
+
+                                       </div>
+                              </a>
+
+                              <div class="thumbnail-descr">
+                                 <h3 data-aos="fade-up"
+                                       data-aos-delay="650">
+                                       Anayo.me
+                                 </h3>
+
+                                 <p  data-aos="fade-up"
+                                       data-aos-delay="700">
+                                       Portfolio website for Product / UI & UX Designer <a href="https://twitter.com/ObiajuluAnayo">@ObiajuluAnayo</a>.
+                                 </p>
+
+                                 <div class="project-btns">
+                                       <button data-aos="fade-up"
+                                          data-aos-delay="750">
+                                          <a href="https://anayo.me/" target="blank" >Live</a>
+                                       </button>
+
+                                 </div>
+                              </div>
+                           </div>
+
+                           <!-- estherewiiliams.com -->
+                           <div class="grid-item">
+                              <a href="https://estherewilliams.com" target="blank">
+                                 <div class="thumbnail h3_offset"
+                                       data-aos="zoom-in-up"
+                                       data-aos-offset="200"
+                                       data-aos-delay="500"
+                                       data-aos-duration="600">
+
+                                 </div>
+                              </a>
+
+                              <div class="thumbnail-descr">
+                                 <h3 data-aos="fade-up"
+                                       data-aos-delay="550">
+                                       Esther E. Williams
+                                 </h3>
+
+                                 <p  data-aos="fade-up"
+                                       data-aos-delay="600">
+                                       Portfolio/Bussiness website for Beauty Therapist & Aesthetician 
+                                       <a href="https://twitter.com/estaregwunye?t=Uq3a_MWj7bAbaHW5KnPsVg&s=09" target="_blank">@EstherWilliams</a>
+                                 </p>
+
+                                 <div class="project-btns">
+                                       <button data-aos="fade-up"
+                                             data-aos-delay="650">
+                                          <a href="https://estherewilliams.com" target="blank">Live</a>
+                                       </button>
+                                 </div>
+                              </div>
+                           </div>
 
 
-        </div>
+                           <!-- paulomotayo.com -->
+                           <div class="grid-item">
+                              <a href="https://paulomotayo.com" target="_blank" >
+                                 <div class="thumbnail"
+                                       data-aos="fade-up"
+                                       data-aos-offset="200"
+                                       data-aos-delay="650"
+                                       data-aos-delay="500"
+                                       data-aos-duration="600">
 
-        <!--Foot-->
-        <footer>
-            <div>
-                <p>
-                    Built with fun by Ugoo
-                </p>
-            </div>
+                                 </div>
+                              </a>
 
-            <div>
-                <a href="https://linkedin.com/in/ugochukwuokeke" target="blank"><i class="la la-linkedin"></i></a>
-                <a href="https://github.com/okeke-ugochukwu"><i class="la la-github"></i></a>
-            </div>
-        </footer>
+                              <div class="thumbnail-descr">
+                                 <h3 data-aos="fade-up"
+                                       data-aos-delay="700">
+                                       Paul Omotayo
+                                 </h3>
+
+                                 <p  data-aos="fade-up"
+                                       data-aos-delay="750">
+                                       Portfolio website for Product Designer/ UI & UX Designer
+                                       <a href="htpps://paulomotayo.com" target="_blank">@PaulOmotayo</a>
+                                 </p>
+
+                                 <div class="project-btns">
+                                       <button data-aos="fade-up"
+                                             data-aos-delay="800">
+                                          <a href="https://paulomotayo.com" target="blank">Live</a>
+                                       </button> 
+                                 </div>
+                              </div>
+                           </div>
+
+                           <!-- micrographia.design -->
+                           <div class="grid-item">
+                              <a href="https://micrographia.design" target="_blank">
+                                 <div class="thumbnail"
+                                       data-aos="fade-up"
+                                       data-aos-offset="200"
+                                       data-aos-delay="700"
+                                       data-aos-duration="600">
+
+                                 </div>
+                              </a>
+
+                              <div class="thumbnail-descr">
+                                 <h3 data-aos="fade-up"
+                                       data-aos-delay="750">
+                                       Micrographia.design
+                                 </h3>
+
+                                 <p  data-aos="fade-up"
+                                       data-aos-delay="800">
+                                       Bussiness website for Product & Design Agency 
+                                       <a href="https://micrographia.design" target="_blank">@Micrographia Solutions</a>
+
+                                 <div class="project-btns">
+                                       <button data-aos="fade-up"
+                                          data-aos-delay="850">
+                                          <a href="https://micrographia.design" target="blank" >Live</a>
+                                       </button>
+
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div  class="more-proj-btn-container"
+                                 data-aos="zoom-in-up"
+                                 data-aos-offset="50"
+                                 data-aos-delay="1000">
+                           <button class="more-projects">
+                                 <a href="recent_projects.html">See More</a>
+                           </button>
+                        </div>
+                     </div>
+               </section>
+
+               <!--Contact section-->
+               <section>
+                     <div class="contact-section">
+
+                           <div class="right">
+                              <div class="hey"
+                                    data-aos="fade-up">
+                                 Wanna get in touch?
+                              </div>
+
+                              <p  data-aos="fade-up"
+                                 data-aos-delay="100">
+                                 You could connect with me on these platforms
+                              </p>
+
+                              <div class="social-icons-links">
+                                 <a href="https://twitter.com/thecavydev" target="blank">
+                                       <i class="la la-twitter"
+                                          data-aos="zoom-in-up">
+                                       </i>
+                                 </a>
+                                 <a href="https://linkedin.com/in/ugochukwuokeke/" target="blank">
+                                       <i  class="la la-linkedin"
+                                          data-aos="zoom-in-up"
+                                          data-aos-delay="100">
+                                       </i>
+                                 </a>
+                                 <a href="https://facebook.com/ugochukwu.okeke.798" target="blank">
+                                       <i  class="la la-facebook-f"
+                                          data-aos="zoom-in-up"
+                                          data-aos-delay="150">
+                                       </i>
+                                 </a>
+                                 <a href="https://instagram.com/thecavydev" target="blank">
+                                       <i class="la la-instagram"
+                                          data-aos="zoom-in-up"
+                                          data-aos-delay="200">
+                                       </i>
+                                 </a>
+                              </div>
+
+                              <p  data-aos="fade-up"
+                                 data-aos-delay="200">
+                                       Or just message me via this form and I'll reply you as quickly as possible!
+                              </p>
+
+                              <div class="form-container">
+                                 <!-- <form action="./php/mailer.php" method="POST"> -->
+                                 <!-- <form action="https://thankgodpay.com/github/mailer.php" method="POST"> -->
+                                 <form action="https://getform.io/f/715060c2-ac3e-4d10-ac13-4e0cd12bb4a2" method="POST">
+                                       <div class="field"
+                                          data-aos="fade-up"
+                                          data-aos-delay="300">
+                                          <i class="la la-user"></i>
+                                          <input type="text" name="Name" class="input-field" placeholder="Your name">
+                                       </div>
+
+
+                                       <div class="field"
+                                          data-aos="fade-up"
+                                          data-aos-delay="350">
+                                          <i class="la la-envelope"></i>
+                                          <input type="email" name="Email" class="input-field" placeholder="Your email">
+                                       </div>
+
+                                       <div class="field"
+                                          data-aos="fade-up"
+                                          data-aos-delay="400">
+                                          <textarea name="Message" class="input-field" placeholder="Your message" id="text-area"></textarea>
+                                       </div>
+
+                                       <div class="field"
+                                          data-aos="fade-up"
+                                          data-aos-delay="450">
+                                          <div class="g-recaptcha" data-sitekey="6LfoXPgZAAAAAGEDv_7ZgVy9oiHCsJfPV0eyINQ4"></div>
+                                       </div>
+
+                                       <div class="field"
+                                          data-aos="zoom-in--up"
+                                          data-aos-delay="500">
+                                          <input type="submit" value="Send Message" id="submit-btn">
+                                       </div>
+
+                                 </form>
+                              </div>
+                           </div>
+
+                        <div class="social-img-container"
+                              data-aos="fade-up"
+                              data-aos-delay="600">
+                              <img loading="lazy" src="img/svg/contact.png" alt="3d social_illustration" class="social-img">
+                        </div>
+                     </div>
+               </section>
+               </main>
+
+
+         </div>
+
+         <!--FOOTER-->
+         <footer>
+               <div>
+                  <p>
+                     Built with fun by Ugoo
+                  </p>
+               </div>
+
+               <div>
+                  <a href="https://linkedin.com/in/ugochukwuokeke" target="blank"><i class="la la-linkedin"></i></a>
+                  <a href="https://github.com/okeke-ugochukwu"><i class="la la-github"></i></a>
+               </div>
+         </footer>
 
         </div>
 
