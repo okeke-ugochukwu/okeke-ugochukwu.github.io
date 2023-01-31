@@ -226,7 +226,9 @@ section .hey {
 .grid-container {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(2, 45%);
+    row-gap: 60px;
+    justify-content: space-evenly;
     justify-items: center;
     margin-bottom: 80px;
 }
@@ -235,9 +237,10 @@ section .hey {
 }
 .thumbnail {
     width: 100%;
-    height: 200px;
+    height: 300px;
     border-radius: 10px;
     background: #490FCF;
+    /* aspect-ratio: 3 / 2; */
 }
 .thumbnail:hover {
     transform: scale(1.02)
@@ -609,11 +612,14 @@ footer a {
         width: 100%;
         grid-template-columns: repeat(2, 50%);
         justify-items: center;
-        grid-row-gap: 20px;
+        grid-row-gap: 40px;
         margin-bottom: 40px;
     }
     .project-btns >button:nth-child(2) {
         width: 50%;
+    }
+    .thumbnail {
+      height: 200px;
     }
     .thumbnail-descr h3 {
         font-size: 25px;
@@ -677,6 +683,7 @@ footer a {
     .project-btns >button:nth-child(2) {
         width: 40%;
     }
+   
     .thumbnail-descr h3 {
         margin: 10px 0px 5px;
     }
