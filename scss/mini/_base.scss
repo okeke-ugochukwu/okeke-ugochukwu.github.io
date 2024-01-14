@@ -1,0 +1,42 @@
+@import './colors';
+@import './screens';
+@import './fonts';
+
+* {
+   font-family: $manrope;
+}
+
+.heading-1 {
+   font-size: 2rem; //32px
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+
+   @include tabs {
+      font-size: 2.875rem; //46px
+   }
+}
+
+.base-text {
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+
+   @include tabs {
+      font-size: 22px;
+   }
+}
+
+.small-text {
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   letter-spacing: -0.531px;
+   text-align: center;
+
+   @include tabs {
+      font-size: 22px;
+   }
+}

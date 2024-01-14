@@ -1,0 +1,33 @@
+@mixin outline {
+   * {
+      outline: 1px solid blue;
+   }
+}
+
+@mixin flex($align, $justify, $direction) {
+   display: flex;
+
+   @if $align {
+      align-items: $align;
+   }
+
+   @if $justify {
+      justify-content: $justify;
+   }
+
+   @if $direction {
+      flex-direction: $direction;
+   }
+}
+
+@mixin noScrollBar {
+   scrollbar-width: none;
+   /* Firefox */
+   -ms-overflow-style: none;
+   /* Internet Explorer 10+ */
+
+   &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+   }
+}

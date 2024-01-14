@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+      <title> Ugochukwu Okeke (Ugo) </title>
+
+      <meta charset="UTF-8">
+
+      <!-- Google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+      <!-- Public assets -->
+      <link rel="stylesheet" href="/css/tailwind.css">
+      <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+      <!-- Meta info -->
+      <meta name="description" content="Passionate Frontend Developer (Vue/Nuxt.js) from Nigeria">
+      <meta name="keywords" content="ugochukwu, okeke, nigeria, abuja, front-end, developer, vue, nuxt, software, thecavydev, github">
+      <meta name="theme-color" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Animations -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      <!--Open Graph data-->
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Ugochukwu Okeke (Ugo)" />
+      <meta property="og:description" content="Passionate Frontend Developer (Vue/Nuxt.js) from Nigeria" />
+      <meta property="og:url" content="https://thecavydev.vercel.app" />
+      <meta property="og:site_name" content="Ugochukwu Okeke (Ugo)">
+      <meta property="og:image" content="" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="600" />
+      <meta property="og:image:alt" content="Website Image Snippet" />
+      <meta name="robots" content="follow, index">
+
+      <!--Twitter Cards-->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@thecavydev">
+      <meta name="twitter:title" content="Ugochukwu Okeke (Ugo)">
+      <meta name="twitter:description" content="Passionate Frontend Developer (Vue/Nuxt.js) from NIgeria">
+      <meta name="twitter:url" content="https://thecavydev.vercel.app">
+      <meta name="twitter:image" content="">
+      <meta name="twitter:site" content="@thecavydev">
+      <meta name="twitter:creator" content="@thecavydev">
+
+   </head>
+
+   <body  class="[&_*]:cursor-[url('/img/cursor.png'),_default] dark:[&_*]:cursor-[url('/img/cursor_dark.png'),_default]">
+      <div class="app bg-tcd-off-white dark:bg-tcd-navy">
+         <div class="app__margin">
+            <!-- THEME SWITCH -->
+            <label for="color-switch" class="app__colorSwitch bg-white dark:bg-[#171F26]">
+               <input 
+                  type="checkbox" name="color-switch" id="color-switch"
+                  class="app__colorSwitchInpu" onchange="SWITCH_MODE(this)"
+                  checked
+               >
+
+               <svg class="text-tcd-grey dark:text-tcd-off-white-2" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9998 13.3333C19.5578 13.3333 19.1339 13.5089 18.8213 13.8215C18.5087 14.134 18.3332 14.558 18.3332 15C18.3332 15.442 18.5087 15.8659 18.8213 16.1785C19.1339 16.4911 19.5578 16.6667 19.9998 16.6667C20.8839 16.6667 21.7317 17.0179 22.3568 17.643C22.982 18.2681 23.3332 19.1159 23.3332 20C23.3332 20.8841 22.982 21.7319 22.3568 22.357C21.7317 22.9821 20.8839 23.3333 19.9998 23.3333C19.5578 23.3333 19.1339 23.5089 18.8213 23.8215C18.5087 24.134 18.3332 24.558 18.3332 25C18.3332 25.442 18.5087 25.8659 18.8213 26.1785C19.1339 26.4911 19.5578 26.6667 19.9998 26.6667C21.7679 26.6667 23.4636 25.9643 24.7139 24.714C25.9641 23.4638 26.6665 21.7681 26.6665 20C26.6665 18.2319 25.9641 16.5362 24.7139 15.286C23.4636 14.0357 21.7679 13.3333 19.9998 13.3333ZM36.1832 18.8167L32.2665 15V9.4C32.2665 8.95797 32.0909 8.53405 31.7783 8.22149C31.4658 7.90893 31.0418 7.73333 30.5998 7.73333H25.0832L21.1832 3.81667C21.0282 3.66045 20.8439 3.53646 20.6408 3.45185C20.4377 3.36723 20.2198 3.32367 19.9998 3.32367C19.7798 3.32367 19.562 3.36723 19.3589 3.45185C19.1558 3.53646 18.9714 3.66045 18.8165 3.81667L14.9998 7.73333H9.39982C8.95779 7.73333 8.53387 7.90893 8.22131 8.22149C7.90875 8.53405 7.73315 8.95797 7.73315 9.4V15L3.81648 18.8167C3.66027 18.9716 3.53628 19.1559 3.45166 19.359C3.36705 19.5621 3.32349 19.78 3.32349 20C3.32349 20.22 3.36705 20.4379 3.45166 20.641C3.53628 20.8441 3.66027 21.0284 3.81648 21.1833L7.73315 25.0833V30.6C7.73315 31.042 7.90875 31.4659 8.22131 31.7785C8.53387 32.0911 8.95779 32.2667 9.39982 32.2667H14.9998L18.8998 36.1833C19.0548 36.3395 19.2391 36.4635 19.4422 36.5481C19.6453 36.6328 19.8631 36.6763 20.0832 36.6763C20.3032 36.6763 20.521 36.6328 20.7241 36.5481C20.9272 36.4635 21.1115 36.3395 21.2665 36.1833L25.1665 32.2667H30.6832C31.1252 32.2667 31.5491 32.0911 31.8617 31.7785C32.1742 31.4659 32.3498 31.042 32.3498 30.6V25.0833L36.2665 21.1833C36.4174 21.023 36.535 20.8343 36.6125 20.6282C36.6901 20.4221 36.726 20.2027 36.7183 19.9826C36.7105 19.7626 36.6592 19.5462 36.5674 19.3461C36.4755 19.146 36.3449 18.966 36.1832 18.8167ZM29.4332 23.2167C29.2757 23.371 29.1504 23.5551 29.0646 23.7582C28.9787 23.9613 28.9341 24.1795 28.9332 24.4V28.9333H24.3998C24.1793 28.9342 23.9612 28.9789 23.758 29.0647C23.5549 29.1506 23.3708 29.2759 23.2165 29.4333L19.9998 32.65L16.7832 29.4333C16.6288 29.2759 16.4447 29.1506 16.2416 29.0647C16.0385 28.9789 15.8203 28.9342 15.5998 28.9333H11.0665V24.4C11.0656 24.1795 11.0209 23.9613 10.9351 23.7582C10.8492 23.5551 10.724 23.371 10.5665 23.2167L7.34982 20L10.5665 16.7833C10.724 16.629 10.8492 16.4449 10.9351 16.2418C11.0209 16.0386 11.0656 15.8205 11.0665 15.6V11.0667H15.5998C15.8203 11.0658 16.0385 11.0211 16.2416 10.9353C16.4447 10.8494 16.6288 10.7241 16.7832 10.5667L19.9998 7.35L23.2165 10.5667C23.3708 10.7241 23.5549 10.8494 23.758 10.9353C23.9612 11.0211 24.1793 11.0658 24.3998 11.0667H28.9332V15.6C28.9341 15.8205 28.9787 16.0386 29.0646 16.2418C29.1504 16.4449 29.2757 16.629 29.4332 16.7833L32.6498 20L29.4332 23.2167Z" fill="currentColor"/>
+               </svg>
+            </label>
+
+
+            <main>
+               <!-- HEADER -->
+               <header class="app__header">
+                  <div class="app__header__avi bg-[transparent]">
+                     <img src="./img/avi.png" alt="Ugochukwu Okeke - Frontend Developer from Nigeria (thecavydev)">
+                  </div>
+
+                  <div class="app__header__title">
+                     <h1 class="app__header__name heading-1 text-tcd-grey-2 dark:text-tcd-off-white-2">
+                        Okeke Ugochukwu
+                     </h1>
+
+                     <p class="app__header__descr base-text text-tcd-grey-2 dark:text-tcd-off-white-2">
+                        Frontend Developer (Vue/Nuxt.js)
+                     </p>
+
+                     <ul class="app__header__links">
+                        <li>
+                           <a class="text-tcd-grey-2 dark:text-tcd-off-white-2" href="https://github.com/okeke-ugochukwu" target="_blank">
+                              <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M18 3.87005C14.4382 3.8702 10.9927 5.13772 8.27995 7.44582C5.5672 9.75392 3.76425 12.952 3.1937 16.4678C2.62315 19.9836 3.32223 23.5877 5.16585 26.6352C7.00947 29.6827 9.87733 31.9748 13.2563 33.1013C14.0063 33.2326 14.2875 32.7826 14.2875 32.3888C14.2875 32.0325 14.2688 30.8513 14.2688 29.595C10.5 30.2888 9.525 28.6763 9.225 27.8326C8.89212 27.012 8.36442 26.2848 7.6875 25.7138C7.1625 25.4325 6.4125 24.7388 7.66874 24.7201C8.14842 24.7721 8.60848 24.939 9.00995 25.2067C9.41142 25.4743 9.74245 25.8348 9.975 26.2575C10.1802 26.6261 10.456 26.9505 10.7868 27.2123C11.1176 27.474 11.4967 27.6679 11.9026 27.7829C12.3084 27.8979 12.7329 27.9316 13.1518 27.8822C13.5707 27.8328 13.9758 27.7012 14.3437 27.495C14.4087 26.7325 14.7485 26.0195 15.3 25.4888C11.9625 25.1138 8.475 23.82 8.475 18.0826C8.45392 16.5918 9.00403 15.1495 10.0125 14.0513C9.55393 12.7557 9.60758 11.3338 10.1625 10.0763C10.1625 10.0763 11.4187 9.68258 14.2875 11.6138C16.7419 10.9388 19.3331 10.9388 21.7875 11.6138C24.6562 9.66384 25.9125 10.0763 25.9125 10.0763C26.4675 11.3338 26.5212 12.7557 26.0625 14.0513C27.074 15.1476 27.6246 16.5912 27.6 18.0826C27.6 23.8388 24.0937 25.1138 20.7563 25.4888C21.1142 25.8517 21.3899 26.2873 21.5646 26.7661C21.7393 27.2449 21.809 27.7557 21.7688 28.2638C21.7688 30.2701 21.75 31.8826 21.75 32.3888C21.75 32.7826 22.0312 33.2513 22.7812 33.1013C26.1542 31.9656 29.0139 29.6682 30.8496 26.6191C32.6854 23.57 33.3778 19.9678 32.8033 16.4554C32.2288 12.943 30.4248 9.74911 27.7132 7.44381C25.0016 5.13852 21.5591 3.8719 18 3.87005Z" fill="currentColor"/>
+                              </svg>
+                           </a> 
+                        </li>
+
+                        <li>
+                           <a class="text-tcd-grey-2 dark:text-tcd-off-white-2" href="https://twitter.com/thecavydev" target="_blank">
+                              <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M33 9.2C31.8725 9.68914 30.6801 10.0125 29.46 10.16C30.7473 9.39098 31.7119 8.18118 32.175 6.755C30.9653 7.4751 29.6411 7.98245 28.26 8.255C27.3368 7.25386 26.1075 6.58745 24.7647 6.36028C23.422 6.13311 22.0418 6.35804 20.8407 6.99979C19.6396 7.64153 18.6854 8.6638 18.1279 9.90626C17.5703 11.1487 17.4409 12.5411 17.76 13.865C15.3141 13.7413 12.9217 13.1044 10.738 11.9958C8.5543 10.8872 6.62827 9.33154 5.085 7.43C4.54371 8.37525 4.25928 9.44574 4.26 10.535C4.25808 11.5466 4.50633 12.5429 4.98263 13.4353C5.45894 14.3278 6.14853 15.0886 6.99 15.65C6.01197 15.6234 5.05483 15.3609 4.2 14.885V14.96C4.20733 16.3773 4.70399 17.7486 5.60597 18.8419C6.50795 19.9353 7.75988 20.6835 9.15 20.96C8.61488 21.1229 8.05931 21.2087 7.5 21.215C7.11284 21.2105 6.72663 21.1754 6.345 21.11C6.74086 22.3292 7.50693 23.3947 8.53661 24.1582C9.56629 24.9218 10.8084 25.3453 12.09 25.37C9.9258 27.0729 7.25383 28.0023 4.5 28.01C3.9986 28.0116 3.4976 27.9816 3 27.92C5.81164 29.7354 9.08822 30.6991 12.435 30.695C14.7445 30.719 17.0357 30.2825 19.1747 29.4111C21.3136 28.5397 23.2575 27.2508 24.8928 25.6197C26.5281 23.9887 27.8219 22.0481 28.6988 19.9114C29.5757 17.7746 30.0181 15.4846 30 13.175C30 12.92 30 12.65 30 12.38C31.177 11.5022 32.1922 10.4261 33 9.2V9.2Z" fill="currentColor"/>
+                              </svg>
+                           </a> 
+                        </li>
+
+                        <li>
+                           <a class="text-tcd-grey-2 dark:text-tcd-off-white-2" href="https://linkedin.com/in/ugochukwuokeke" target="_blank">
+                              <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M30.705 3.5H5.295C5.00937 3.49603 4.72575 3.54837 4.46035 3.65402C4.19495 3.75968 3.95295 3.91658 3.7482 4.11576C3.54344 4.31495 3.37992 4.55252 3.26699 4.81491C3.15405 5.0773 3.09391 5.35936 3.09 5.645V31.355C3.09391 31.6406 3.15405 31.9227 3.26699 32.1851C3.37992 32.4475 3.54344 32.685 3.7482 32.8842C3.95295 33.0834 4.19495 33.2403 4.46035 33.346C4.72575 33.4516 5.00937 33.504 5.295 33.5H30.705C30.9906 33.504 31.2742 33.4516 31.5396 33.346C31.8051 33.2403 32.047 33.0834 32.2518 32.8842C32.4566 32.685 32.6201 32.4475 32.733 32.1851C32.8459 31.9227 32.9061 31.6406 32.91 31.355V5.645C32.9061 5.35936 32.8459 5.0773 32.733 4.81491C32.6201 4.55252 32.4566 4.31495 32.2518 4.11576C32.047 3.91658 31.8051 3.75968 31.5396 3.65402C31.2742 3.54837 30.9906 3.49603 30.705 3.5ZM12.135 28.61H7.635V15.11H12.135V28.61ZM9.885 13.22C9.26439 13.22 8.6692 12.9735 8.23037 12.5346C7.79153 12.0958 7.545 11.5006 7.545 10.88C7.545 10.2594 7.79153 9.6642 8.23037 9.22537C8.6692 8.78653 9.26439 8.54 9.885 8.54C10.2145 8.50262 10.5483 8.53528 10.8643 8.63582C11.1804 8.73636 11.4716 8.90253 11.719 9.12344C11.9664 9.34435 12.1643 9.61501 12.2998 9.91772C12.4353 10.2204 12.5054 10.5483 12.5054 10.88C12.5054 11.2117 12.4353 11.5396 12.2998 11.8423C12.1643 12.145 11.9664 12.4156 11.719 12.6366C11.4716 12.8575 11.1804 13.0236 10.8643 13.1242C10.5483 13.2247 10.2145 13.2574 9.885 13.22ZM28.365 28.61H23.865V21.365C23.865 19.55 23.22 18.365 21.585 18.365C21.079 18.3687 20.5863 18.5274 20.1733 18.8198C19.7602 19.1121 19.4467 19.524 19.275 20C19.1576 20.3526 19.1068 20.7239 19.125 21.095V28.595H14.625C14.625 28.595 14.625 16.325 14.625 15.095H19.125V17C19.5338 16.2907 20.1284 15.7063 20.8447 15.3098C21.561 14.9133 22.3719 14.7198 23.19 14.75C26.19 14.75 28.365 16.685 28.365 20.84V28.61Z" fill="currentColor"/>
+                              </svg>
+                           </a> 
+                        </li>
+
+                        <li>
+                           <a class="text-tcd-grey-2 dark:text-tcd-off-white-2" href="#" target="_blank">
+                              <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M34.5 15.065C34.5742 12.918 34.1046 10.787 33.135 8.87C32.4771 8.0834 31.5641 7.55256 30.555 7.37C26.3813 6.99129 22.1903 6.83607 18 6.905C13.825 6.83294 9.64907 6.98315 5.49 7.355C4.66773 7.50457 3.90678 7.89026 3.3 8.465C1.95 9.71 1.8 11.84 1.65 13.64C1.43237 16.8763 1.43237 20.1237 1.65 23.36C1.6934 24.3731 1.84424 25.3787 2.1 26.36C2.28086 27.1176 2.64679 27.8185 3.165 28.4C3.7759 29.0052 4.55458 29.4128 5.4 29.57C8.63388 29.9692 11.8923 30.1346 15.15 30.065C20.4 30.14 25.005 30.065 30.45 29.645C31.3162 29.4975 32.1168 29.0893 32.745 28.475C33.1649 28.0549 33.4786 27.5406 33.66 26.975C34.1964 25.3289 34.4599 23.6062 34.44 21.875C34.5 21.035 34.5 15.965 34.5 15.065ZM14.61 22.775V13.49L23.49 18.155C21 19.535 17.715 21.095 14.61 22.775Z" fill="currentColor"/>
+                              </svg>
+
+                           </a> 
+                        </li>
+                     </ul>
+                  </div>
+               </header>
+
+               <!-- STATS -->
+               <ul class="app__stats">
+                  <li class="text-tcd-grey-2 dark:text-tcd-off-white-2 base-text">
+                     <span class="text-[#3A3A3A] dark:text-tcd-off-white-2"> 5 </span>
+                     <span> Years of coding experience </span>
+                  </li>
+
+                  <li class="text-tcd-grey-2 dark:text-tcd-off-white-2 base-text">
+                     <span class="text-[#3A3A3A] dark:text-tcd-off-white-2"> 50+ </span>
+                     <span> Completed projects </span>
+                  </li>
+
+                  <li class="text-tcd-grey-2 dark:text-tcd-off-white-2 base-text">
+                     <span class="text-[#3A3A3A] dark:text-tcd-off-white-2"> 20+ </span>
+                     <span> Personal side projects </span>
+                  </li>
+               </ul>
+
+               <!-- CALL TO ACTION -->
+               <div class="app__cta">
+                  <a 
+                     class="app__cta__button small-text bg-tcd-yellow text-tcd-grey dark:font-[700_!important] dark:cursor-[none_!important]"
+                     href="http://" 
+                     target="_blank" rel="noopener noreferrer"
+                  >
+                     <span> Download CV </span>
+
+                     <svg class="dark:stroke-navy dark:stroke-[0.3]"  width="16" height="15" viewBox="0 0 16 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.6666 12.1667H3.33329C3.15648 12.1667 2.98691 12.2281 2.86189 12.3375C2.73686 12.4469 2.66663 12.5953 2.66663 12.75C2.66663 12.9047 2.73686 13.0531 2.86189 13.1625C2.98691 13.2719 3.15648 13.3333 3.33329 13.3333H12.6666C12.8434 13.3333 13.013 13.2719 13.138 13.1625C13.2631 13.0531 13.3333 12.9047 13.3333 12.75C13.3333 12.5953 13.2631 12.4469 13.138 12.3375C13.013 12.2281 12.8434 12.1667 12.6666 12.1667ZM7.52663 10.8308C7.59003 10.8839 7.66479 10.9256 7.74663 10.9533C7.82643 10.9842 7.91271 11.0001 7.99996 11.0001C8.08721 11.0001 8.17349 10.9842 8.25329 10.9533C8.33513 10.9256 8.40989 10.8839 8.47329 10.8308L11.14 8.4975C11.2655 8.38765 11.336 8.23867 11.336 8.08333C11.336 7.92799 11.2655 7.77901 11.14 7.66916C11.0144 7.55932 10.8442 7.49761 10.6666 7.49761C10.4891 7.49761 10.3188 7.55932 10.1933 7.66916L8.66663 9.01083V2.25C8.66663 2.09529 8.59639 1.94691 8.47136 1.83752C8.34634 1.72812 8.17677 1.66666 7.99996 1.66666C7.82315 1.66666 7.65358 1.72812 7.52855 1.83752C7.40353 1.94691 7.33329 2.09529 7.33329 2.25V9.01083L5.80663 7.66916C5.74447 7.61477 5.67067 7.57163 5.58946 7.5422C5.50824 7.51276 5.4212 7.49761 5.33329 7.49761C5.24539 7.49761 5.15834 7.51276 5.07713 7.5422C4.99591 7.57163 4.92212 7.61477 4.85996 7.66916C4.7978 7.72355 4.74849 7.78812 4.71485 7.85918C4.68121 7.93025 4.6639 8.00641 4.6639 8.08333C4.6639 8.16025 4.68121 8.23641 4.71485 8.30748C4.74849 8.37854 4.7978 8.44311 4.85996 8.4975L7.52663 10.8308Z" fill="currentColor"/>
+                     </svg>
+                  </a>
+
+                  <a 
+                     class="app__cta__button small-text bg-white dark:bg-[#171F26] dark:text-tcd-off-white-2 text-tcd-grey"
+                     href="http://mailto:okekeugochukwu.dev@gmail.com" 
+                     target="_blank" rel="noopener noreferrer"
+                  >
+                     <span> Contact Me </span>
+                  </a>
+               </div>
+
+               <!-- TABS -->
+               <div class="app__tabs ">
+                  <div class="app__tabs__inner bg-white dark:bg-[#171F26]">
+                     <label class="base-text text-[#19191B] dark:text-tcd-off-white-2" for="projects-tab"> Projects </label>
+                     <label class="base-text text-[#19191B] dark:text-tcd-off-white-2" for="skills-tab"> Skills </label>
+
+                     <input type="radio" name="tab" id="projects-tab">
+                     <input type="radio" name="tab" id="skills-tab">
+
+                     <div class="app__tabs__ind">
+                        <div class="app__tabs__block bg-tcd-grey-3 dark:bg-tcd-navy">
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- PROJECTS -->
+               <div class="app__projects">
+                  <ul>
+                     <li>
+                        <a href="">
+
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+
+               <!-- SKILLS -->
+               <div class="app__skills">
+
+               </div>
+            </main>
+
+         </div>
+
+         <div class="app__bg bg-tcd-off-white opacity-[0.02]">
+
+         </div>
+      </div>
+
+      <script type="text/javascript" src="js/script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script> AOS.init() </script>
+   </body>
+
+</html>

@@ -1,0 +1,35 @@
+@mixin pads {
+  @media (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin tabs {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin p-laps {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin laps {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktopX {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
