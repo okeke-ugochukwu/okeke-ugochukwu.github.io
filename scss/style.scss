@@ -7,11 +7,11 @@
 @import './mini/fonts';
 @import './mini/mixins';
 @import './mini/screens';
+@import './mini/cursor';
 
 * {
    // @include outline;
 }
-
 main {
    @include flex(center, center, column);
 }
@@ -51,8 +51,8 @@ main {
       right: 30px;
       width: 60px;
       height: 60px;
-      cursor: pointer;
       border-radius: 100%;
+      cursor: url('/img/cursor_hand.png'), pointer;
 
       @media (hover: hover) {
          &:hover {
@@ -240,7 +240,6 @@ main {
          text-align: center;
          @include flex(center, center, false);
          border-radius: 10px;
-         cursor: pointer;
       }
 
       &__inner {

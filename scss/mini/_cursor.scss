@@ -1,0 +1,35 @@
+* {
+   // @include outline;
+   cursor: url('/img/cursor.png'), default;
+}
+
+label, label *,
+button, button *,
+a, a * {
+   cursor: url('/img/cursor_hand.png'), pointer;
+}
+
+
+.dark {
+   * {
+      cursor: url('/img/cursor_dark.png'), default;
+   }
+
+   label, label *,
+   button, button * {
+      cursor: url('/img/cursor_hand_dark.png'), pointer;
+   }
+
+   a {
+      cursor: url('/img/cursor_hand_dark.png'), pointer;
+
+      & * {
+         cursor: url('/img/cursor_hand_dark.png'), pointer;
+      }
+
+      &.primary, &.primary * {
+         cursor: url('/img/cursor_hand.png'), pointer;
+      }
+   }
+}
+

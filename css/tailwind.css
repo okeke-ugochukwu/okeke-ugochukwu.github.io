@@ -648,6 +648,37 @@ html {
   }
 }
 
+* {
+  cursor: url("/img/cursor.png"), default;
+}
+
+label, label *,
+button, button *,
+a, a * {
+  cursor: url("/img/cursor_hand.png"), pointer;
+}
+
+.dark * {
+  cursor: url("/img/cursor_dark.png"), default;
+}
+
+.dark label, .dark label *,
+.dark button, .dark button * {
+  cursor: url("/img/cursor_hand_dark.png"), pointer;
+}
+
+.dark a {
+  cursor: url("/img/cursor_hand_dark.png"), pointer;
+}
+
+.dark a * {
+  cursor: url("/img/cursor_hand_dark.png"), pointer;
+}
+
+.dark a.primary, .dark a.primary * {
+  cursor: url("/img/cursor_hand.png"), pointer;
+}
+
 main {
   display: flex;
   align-items: center;
@@ -697,8 +728,8 @@ main {
   right: 30px;
   width: 60px;
   height: 60px;
-  cursor: pointer;
   border-radius: 100%;
+  cursor: url("/img/cursor_hand.png"), pointer;
 }
 
 @media (hover: hover) {
@@ -920,7 +951,6 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .app__tabs__inner {
@@ -991,13 +1021,5 @@ main {
 :is(.dark .dark\:text-tcd-off-white-2) {
   --tw-text-opacity: 1;
   color: rgb(163 171 178 / var(--tw-text-opacity));
-}
-
-.\[\&_\*\]\:cursor-\[url\(\'\/img\/cursor\.png\'\)\2c _default\] * {
-  cursor: url('/img/cursor.png'), default;
-}
-
-:is(.dark .dark\:\[\&_\*\]\:cursor-\[url\(\'\/img\/cursor_dark\.png\'\)\2c _default\] *) {
-  cursor: url('/img/cursor_dark.png'), default;
 }
 /*# sourceMappingURL=tailwind.css.map */
