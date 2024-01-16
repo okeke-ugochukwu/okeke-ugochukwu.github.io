@@ -5,7 +5,8 @@
 
 label, label *,
 button, button *,
-a, a * {
+a, a *,
+li.app__skill, li.app__skill > * {
    cursor: url('/img/cursor_hand.png'), pointer;
 }
 
@@ -20,16 +21,14 @@ a, a * {
       cursor: url('/img/cursor_hand_dark.png'), pointer;
    }
 
-   a {
+   a, a * {
       cursor: url('/img/cursor_hand_dark.png'), pointer;
+   }
 
-      & * {
-         cursor: url('/img/cursor_hand_dark.png'), pointer;
-      }
-
-      &.primary, &.primary * {
-         cursor: url('/img/cursor_hand.png'), pointer;
-      }
+   a.primary, a.primary *,
+   li.app__project > a, li.app__project > a *
+   li.app__skill , li.app__skill > * {
+      cursor: url('/img/cursor_hand.png'), pointer;
    }
 }
 

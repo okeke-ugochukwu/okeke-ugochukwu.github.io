@@ -12,6 +12,7 @@
 * {
    // @include outline;
 }
+
 main {
    @include flex(center, center, column);
 }
@@ -19,6 +20,7 @@ main {
 .app {
    padding-top: 20px;
    padding-bottom: 40px;
+   height: max-content;
 
    @include p-laps {
       padding-top: 33px;
@@ -283,10 +285,167 @@ main {
    }
 
    &__projects {
+      width: 100%;
+      display: none;
 
+      ul {
+
+         li {
+            display: inline-block;
+            width: 100%;
+            aspect-ratio: 1.7 / 1;
+            border-radius: 15px;
+            overflow: hidden;
+
+            &:not(:last-child) {
+               margin-bottom: 30px;
+            }
+
+            @include tabs {
+               &:not(:last-child) {
+                  margin-bottom: unset;
+               }
+            }
+
+            a {
+               display: block;
+               width: 100%;
+               height: 100%;
+               position: relative;
+
+               &::after {
+                  filter: grayscale(1) brightness(0.7);
+                  position: absolute;
+                  top: 0; left: 0;
+                  content: ''; 
+                  width: 100%;
+                  height: 100%;
+               }
+
+               &#portfolio {
+                  &::after {
+                     background: url('../img/portfolio.jpg') center/cover;
+                  }
+               }
+
+               &#design-portfolio {
+                  &::after {
+                     background: url('../img/design-portfolio.jpg') top/cover;
+                  }
+               }
+
+               &#rest-api-countries {
+                  &::after {
+                     background: url('../img/rest-countries.jpg') top/cover;
+                  }
+               }
+
+               &#micrographia {
+                  &::after {
+                     background: url('../img/micrographia.jpg') center/cover;
+                  }
+               }
+
+               & > div {
+                  width: 100%;
+                  height: 100%;
+                  background: #f0a315b6;
+                  position: absolute;
+                  z-index: 1;
+                  @include flex(center, center, column);
+                  opacity: 0;
+                  
+                  & > div.app__project__text {
+                     width: 75.13%;
+                     margin-bottom: 5px;
+
+                     span {
+                        text-align: center;
+                        display: block;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        letter-spacing: -0.531px;
+
+                        &:nth-child(1) {
+                           font-weight: 700;
+                           font-size: 22px;
+                        }
+                     }
+                  }
+
+                  & > div.app__project__icon {
+                     width: 65px;
+                     height: 65px;
+                     border-radius: 100%;
+                     @include flex(center, center, column);
+
+
+                     & > svg {
+                           width: 30px;
+                     }
+                  }
+               }
+
+               &:hover {
+                  & > div {
+                     opacity: 1;
+                  }
+               }
+            }
+         }
+
+         @include tabs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 48px;
+         }
+      }
+
+      &.shown {
+         display: block;
+      }
    }
 
    &__skills {
+      width: 100%;
+      display: none;
 
+      ul {
+         width: 100%;
+         display: grid;
+         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+         gap: 30px;
+
+         @include tabs {
+            gap: 48px;
+         }
+
+         li {
+            display: inline-block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            padding: 30%;
+            grid-template-columns: repeat(auto-fit, mini(150px, 1fr));
+            height: 100%;
+            border-radius: 30px;
+            @include flex(center, center, false);
+            
+            &:hover {
+               background: #f0a315b6;
+               
+            }
+
+            svg {
+               width: 100%;
+               display: block;
+            }
+         }
+      }
+      
+      &.shown {
+         display: block;
+      }
    }
 }

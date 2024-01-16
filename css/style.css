@@ -60,7 +60,8 @@ html {
 
 label, label *,
 button, button *,
-a, a * {
+a, a *,
+li.app__skill, li.app__skill > * {
   cursor: url("/img/cursor_hand.png"), pointer;
 }
 
@@ -71,13 +72,12 @@ a, a * {
 .dark button, .dark button * {
   cursor: url("/img/cursor_hand_dark.png"), pointer;
 }
-.dark a {
+.dark a, .dark a * {
   cursor: url("/img/cursor_hand_dark.png"), pointer;
 }
-.dark a * {
-  cursor: url("/img/cursor_hand_dark.png"), pointer;
-}
-.dark a.primary, .dark a.primary * {
+.dark a.primary, .dark a.primary *,
+.dark li.app__project > a, .dark li.app__project > a * li.app__skill,
+.dark li.app__skill > * {
   cursor: url("/img/cursor_hand.png"), pointer;
 }
 
@@ -91,6 +91,8 @@ main {
 .app {
   padding-top: 20px;
   padding-bottom: 40px;
+  height: -moz-max-content;
+  height: max-content;
 }
 @media (min-width: 992px) {
   .app {
@@ -359,4 +361,141 @@ main {
   .app__tabs__block {
     width: 50%;
   }
+}
+.app__projects {
+  width: 100%;
+  display: none;
+}
+.app__projects ul li {
+  display: inline-block;
+  width: 100%;
+  aspect-ratio: 1.7/1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.app__projects ul li:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .app__projects ul li:not(:last-child) {
+    margin-bottom: unset;
+  }
+}
+.app__projects ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.app__projects ul li a::after {
+  filter: grayscale(1) brightness(0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.app__projects ul li a#portfolio::after {
+  background: url("../img/portfolio.jpg") center/cover;
+}
+.app__projects ul li a#design-portfolio::after {
+  background: url("../img/design-portfolio.jpg") top/cover;
+}
+.app__projects ul li a#rest-api-countries::after {
+  background: url("../img/rest-countries.jpg") top/cover;
+}
+.app__projects ul li a#micrographia::after {
+  background: url("../img/micrographia.jpg") center/cover;
+}
+.app__projects ul li a > div {
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 163, 21, 0.7137254902);
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+}
+.app__projects ul li a > div > div.app__project__text {
+  width: 75.13%;
+  margin-bottom: 5px;
+}
+.app__projects ul li a > div > div.app__project__text span {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.531px;
+}
+.app__projects ul li a > div > div.app__project__text span:nth-child(1) {
+  font-weight: 700;
+  font-size: 22px;
+}
+.app__projects ul li a > div > div.app__project__icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.app__projects ul li a > div > div.app__project__icon > svg {
+  width: 30px;
+}
+.app__projects ul li a:hover > div {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .app__projects ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+}
+.app__projects.shown {
+  display: block;
+}
+.app__skills {
+  width: 100%;
+  display: none;
+}
+.app__skills ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .app__skills ul {
+    gap: 48px;
+  }
+}
+.app__skills ul li {
+  display: inline-block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  padding: 30%;
+  grid-template-columns: repeat(auto-fit, mini(150px, 1fr));
+  height: 100%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app__skills ul li:hover {
+  background: rgba(240, 163, 21, 0.7137254902);
+}
+.app__skills ul li svg {
+  width: 100%;
+  display: block;
+}
+.app__skills.shown {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
