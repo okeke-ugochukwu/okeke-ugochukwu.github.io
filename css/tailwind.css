@@ -740,6 +740,13 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-bottom: 87px;
+  }
 }
 
 .app {
@@ -1262,6 +1269,10 @@ main {
 
 .app__skills.shown {
   display: block;
+}
+
+footer {
+  text-align: center;
 }
 
 :is(.dark .dark\:bg-tcd-navy) {
