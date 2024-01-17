@@ -364,12 +364,12 @@ main {
                }
 
                & > div {
+                  @include flex(center, center, column);
                   width: 100%;
                   height: 100%;
                   background: #f0a315de;
                   position: absolute;
                   z-index: 1;
-                  @include flex(center, center, column);
                   opacity: 0;
                   
                   & > div.app__project__text {
@@ -397,10 +397,27 @@ main {
                      height: 65px;
                      border-radius: 100%;
                      @include flex(center, center, column);
+                     position: relative;
 
+                     div.app__project__icon__slider {
+                        @include flex(center, center, false);
+                        width: 30px;
+                        height: 30px;
+                        position: relative;
+                        overflow: hidden
+                     }
 
-                     & > svg {
-                           width: 30px;
+                     div.app__project__icon__slide {
+                        display: flex;
+                        gap: 15px;
+                        width: max-content;
+                        position: absolute;
+                        transform: rotate(-45deg) translateX(-24px);
+                     }
+
+                     & svg {
+                        width: 30px;
+                        height: 30px;
                      }
                   }
                }
@@ -408,6 +425,12 @@ main {
                &:hover {
                   & > div {
                      opacity: 1;
+
+                     & > div.app__project__icon {
+                        div.app__project__icon__slide {
+                           transform: rotate(-45deg) translateX(22px);
+                        }
+                     }
                   }
                }
             }
@@ -449,7 +472,11 @@ main {
             
             &:hover {
                background: #f0a315de;
-               
+
+               svg {
+                  transition: .3s;
+                  transform: scale(1.1);
+               }
             }
 
             svg {

@@ -447,15 +447,15 @@ main {
   background: url("../img/micrographia.jpg") center/cover;
 }
 .app__projects ul li a > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   background: rgba(240, 163, 21, 0.8705882353);
   position: absolute;
   z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   opacity: 0;
 }
 .app__projects ul li a > div > div.app__project__text {
@@ -483,12 +483,34 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
-.app__projects ul li a > div > div.app__project__icon > svg {
+.app__projects ul li a > div > div.app__project__icon div.app__project__icon__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.app__projects ul li a > div > div.app__project__icon div.app__project__icon__slide {
+  display: flex;
+  gap: 15px;
+  width: -moz-max-content;
+  width: max-content;
+  position: absolute;
+  transform: rotate(-45deg) translateX(-24px);
+}
+.app__projects ul li a > div > div.app__project__icon svg {
+  width: 30px;
+  height: 30px;
 }
 .app__projects ul li a:hover > div {
   opacity: 1;
+}
+.app__projects ul li a:hover > div > div.app__project__icon div.app__project__icon__slide {
+  transform: rotate(-45deg) translateX(22px);
 }
 @media (min-width: 768px) {
   .app__projects ul {
@@ -527,6 +549,10 @@ main {
 }
 .app__skills ul li:hover {
   background: rgba(240, 163, 21, 0.8705882353);
+}
+.app__skills ul li:hover svg {
+  transition: 0.3s;
+  transform: scale(1.1);
 }
 .app__skills ul li svg {
   width: 100%;
