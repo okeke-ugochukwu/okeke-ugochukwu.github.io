@@ -92,7 +92,6 @@ const SWITCH_TAB = (incomingTab, el_src) => {
 
          //start transition
          tabContent.classList.add('in-transition')
-         console.log("🚀 ~ file: script.js:96 ~ tabContent:", tabContent)
 
          //change tab
          setTimeout(() => {
