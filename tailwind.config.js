@@ -15,6 +15,7 @@ module.exports = {
             'tcd-grey-2': '#575757',
             'tcd-grey-3': '#D7D7D7',
             'tcd-navy': '#0C151D',  
+            'tcd-navy-2': '#171F26',  
             'tcd-off-white-2': '#A3ABB2'
          }  
       },

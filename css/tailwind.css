@@ -611,6 +611,14 @@ video {
   opacity: 0.02;
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 * {
   transition: 0.3s;
   margin: 0;
@@ -671,10 +679,24 @@ html {
   cursor: url("/img/cursor.png"), default;
 }
 
-label, label *,
-button, button *,
-a, a *,
-li.app__skill, li.app__skill > * {
+*::-moz-selection {
+  background-color: #3D3D3D;
+  color: #A3ABB2;
+}
+
+*::selection {
+  background-color: #3D3D3D;
+  color: #A3ABB2;
+}
+
+label,
+label *,
+button,
+button *,
+a,
+a *,
+li.app__skill,
+li.app__skill > * {
   cursor: url("/img/cursor_hand.png"), pointer;
 }
 
@@ -682,18 +704,34 @@ li.app__skill, li.app__skill > * {
   cursor: url("/img/cursor_dark.png"), default;
 }
 
-.dark label, .dark label *,
-.dark button, .dark button * {
+.dark *::-moz-selection {
+  background-color: #171F26;
+  color: #A3ABB2;
+}
+
+.dark *::selection {
+  background-color: #171F26;
+  color: #A3ABB2;
+}
+
+.dark label,
+.dark label *,
+.dark button,
+.dark button * {
   cursor: url("/img/cursor_hand_dark.png"), pointer;
 }
 
-.dark a, .dark a * {
+.dark a,
+.dark a * {
   cursor: url("/img/cursor_hand_dark.png"), pointer;
 }
 
-.dark a.primary, .dark a.primary *,
-.dark li.app__project > a, .dark li.app__project > a * li.app__skill,
-.dark li.app__skill > * {
+.dark a.primary,
+.dark a.primary *,
+.dark li.app__project > a,
+.dark li.app__project > a *,
+.dark li.app__skill,
+.dark li.app__skill * {
   cursor: url("/img/cursor_hand.png"), pointer;
 }
 
@@ -705,10 +743,11 @@ main {
 }
 
 .app {
-  padding-top: 20px;
+  padding-top: 50px;
   padding-bottom: 40px;
   height: -moz-max-content;
   height: max-content;
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -731,10 +770,10 @@ main {
 
 .app__bg {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   position: absolute;
   top: 0;
-  background: url("/img/bg-pattern.png") left/contain;
+  background: url("/img/bg-pattern.png") left/800px;
 }
 
 .app__colorSwitch {
@@ -781,7 +820,6 @@ main {
   justify-content: flex-start;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -870,7 +908,6 @@ main {
   justify-content: space-between;
   flex-direction: row;
   gap: 32.5px;
-  margin-bottom: 30px;
   padding: 20px 0px;
 }
 
@@ -891,7 +928,6 @@ main {
   justify-content: center;
   gap: 14px;
   padding: 18px 0px;
-  margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -930,6 +966,11 @@ main {
     width: 26.979px;
     height: 24px;
   }
+}
+
+.app__cta__button.pressed {
+  transition: 0.2s;
+  transform: scale(0.98);
 }
 
 .app__tabs {
@@ -1020,6 +1061,18 @@ main {
   }
 }
 
+.app__tabs__content {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  transition: 0.5s ease;
+}
+
+.app__tabs__content.in-transition {
+  filter: blur(25px);
+  opacity: 0.5;
+}
+
 .app__projects {
   width: 100%;
   display: none;
@@ -1079,7 +1132,7 @@ main {
 .app__projects ul li a > div {
   width: 100%;
   height: 100%;
-  background: rgba(240, 163, 21, 0.7137254902);
+  background: rgba(240, 163, 21, 0.8705882353);
   position: absolute;
   z-index: 1;
   display: flex;
@@ -1161,9 +1214,7 @@ main {
   display: inline-block;
   width: 100%;
   aspect-ratio: 1/1;
-  padding: 30%;
-  grid-template-columns: repeat(auto-fit, mini(150px, 1fr));
-  height: 100%;
+  padding: 20% 30%;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -1171,7 +1222,7 @@ main {
 }
 
 .app__skills ul li:hover {
-  background: rgba(240, 163, 21, 0.7137254902);
+  background: rgba(240, 163, 21, 0.8705882353);
 }
 
 .app__skills ul li svg {
@@ -1183,14 +1234,14 @@ main {
   display: block;
 }
 
-:is(.dark .dark\:bg-\[\#171F26\]) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 31 38 / var(--tw-bg-opacity));
-}
-
 :is(.dark .dark\:bg-tcd-navy) {
   --tw-bg-opacity: 1;
   background-color: rgb(12 21 29 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-tcd-navy-2) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 31 38 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:stroke-\[0\.3\]) {

@@ -18,9 +18,10 @@ main {
 }
 
 .app {
-   padding-top: 20px;
+   padding-top: 50px;
    padding-bottom: 40px;
    height: max-content;
+   position: relative;
 
    @include p-laps {
       padding-top: 33px;
@@ -38,10 +39,10 @@ main {
 
    &__bg {
       width: 100vw;
-      height: 100vh;
+      height: 100%;
       position: absolute;
       top: 0;
-      background: url('/img/bg-pattern.png') left/contain;
+      background: url('/img/bg-pattern.png') left/800px;
    }
 
    &__colorSwitch {
@@ -81,7 +82,7 @@ main {
       text-align: center;
       @include flex(center, flex-start, column);
       gap: 40px;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
 
       @include tabs {
          margin-bottom: 48px;
@@ -153,7 +154,7 @@ main {
       text-align: center;
       @include flex(center, space-between, row);
       gap: 32.5px;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
       padding: 20px 0px;
 
       span:nth-child(1) {
@@ -170,7 +171,7 @@ main {
       @include flex(center, center, false);
       gap: 14px;
       padding: 18px 0px;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
 
       @include tabs {
          gap: 36px;
@@ -198,6 +199,11 @@ main {
                width: 26.979px;
                height: 24px;
             }
+         }
+
+         &.pressed {
+            transition: .2s;
+            transform: scale(.98);
          }
       }
    }
@@ -284,6 +290,17 @@ main {
       }
    }
 
+   &__tabs__content {
+      width: 100%;
+      height: max-content;
+      transition: .5s ease;
+
+      &.in-transition {
+         filter: blur(25px);
+         opacity: .5;
+      }
+   }
+
    &__projects {
       width: 100%;
       display: none;
@@ -349,7 +366,7 @@ main {
                & > div {
                   width: 100%;
                   height: 100%;
-                  background: #f0a315b6;
+                  background: #f0a315de;
                   position: absolute;
                   z-index: 1;
                   @include flex(center, center, column);
@@ -426,14 +443,12 @@ main {
             display: inline-block;
             width: 100%;
             aspect-ratio: 1 / 1;
-            padding: 30%;
-            grid-template-columns: repeat(auto-fit, mini(150px, 1fr));
-            height: 100%;
+            padding: 20% 30%;  
             border-radius: 30px;
             @include flex(center, center, false);
             
             &:hover {
-               background: #f0a315b6;
+               background: #f0a315de;
                
             }
 

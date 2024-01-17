@@ -1,12 +1,23 @@
+@import './colors';
+
 * {
    // @include outline;
    cursor: url('/img/cursor.png'), default;
+
+   &::selection {
+      background-color: $tcd-grey;
+      color: $tcd-off-white-2;
+   }
 }
 
-label, label *,
-button, button *,
-a, a *,
-li.app__skill, li.app__skill > * {
+label,
+label *,
+button,
+button *,
+a,
+a *,
+li.app__skill,
+li.app__skill>* {
    cursor: url('/img/cursor_hand.png'), pointer;
 }
 
@@ -14,21 +25,32 @@ li.app__skill, li.app__skill > * {
 .dark {
    * {
       cursor: url('/img/cursor_dark.png'), default;
+
+      &::selection {
+         background-color: $tcd-navy-2;
+         color: $tcd-off-white-2;
+      }
    }
 
-   label, label *,
-   button, button * {
+   label,
+   label *,
+   button,
+   button * {
       cursor: url('/img/cursor_hand_dark.png'), pointer;
    }
 
-   a, a * {
+   a,
+   a * {
       cursor: url('/img/cursor_hand_dark.png'), pointer;
    }
 
-   a.primary, a.primary *,
-   li.app__project > a, li.app__project > a *
-   li.app__skill , li.app__skill > * {
+   a.primary,
+   a.primary *,
+   li.app__project>a,
+   li.app__project>a *,
+   li.app__skill,
+   li.app__skill * {
       cursor: url('/img/cursor_hand.png'), pointer;
    }
-}
 
+}
